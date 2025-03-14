@@ -1,4 +1,4 @@
-//* General Styles */
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -6,13 +6,27 @@ body {
     padding: 0;
     background-color: #121212; /* Dark background */
     color: #ffffff; /* White text for readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
   }
   
-  header {
+  header.full-height {
     background-color: #000000; /* Pure black */
     color: #ffffff; /* White text */
-    padding: 40px 20px;
+    flex: 1; /* Make the header take up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+  }
+  
+  .content-container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark gray container */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
   }
   
   h1 {
@@ -27,7 +41,6 @@ body {
     color: #aaaaaa; /* Light gray for slogan */
     margin-top: 10px;
     direction: rtl; /* Right-to-left text direction for Arabic */
-    text-align: center;
   }
   
   a {
@@ -46,20 +59,11 @@ body {
     margin: 0;
   }
   
-  .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #1e1e1e; /* Dark gray container */
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-  }
-  
   footer {
     text-align: center;
     padding: 20px 0;
     background-color: #000000; /* Pure black */
     color: #aaaaaa; /* Light gray text */
     font-size: 0.9em;
-    margin-top: 40px;
+    margin-top: auto; /* Push the footer to the bottom */
   }

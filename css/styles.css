@@ -46,11 +46,15 @@ body {
   a {
     color: #03dac6; /* Teal for links */
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Ensure links can have padding */
+    padding: 10px 15px; /* Add padding to make links easier to tap */
+    border-radius: 5px; /* Rounded corners for a clean look */
   }
   
   a:hover {
-    color: #018786; /* Slightly darker teal for hover */
+    color: #ffffff; /* White text on hover */
+    background-color: #018786; /* Highlight links on hover/tap */
   }
   
   ul {
@@ -67,3 +71,23 @@ body {
     font-size: 0.9em;
     margin-top: auto; /* Push the footer to the bottom */
   }
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em; /* Slightly smaller title for mobile */
+  }
+
+  .slogan {
+    font-size: 1em; /* Slightly smaller slogan */
+  }
+
+  .content-container {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  a {
+    font-size: 1em; /* Adjust link size for readability */
+    padding: 10px 15px; /* Make links easier to tap */
+    border-radius: 5px;
+  }
+}

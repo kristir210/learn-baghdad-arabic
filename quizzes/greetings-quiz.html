@@ -15,9 +15,26 @@
   <div class="container">
     <h2>Test Your Knowledge!</h2>
     <form id="quizForm">
+      <!-- Question 1 -->
       <p>What is "Hello" in Baghdad Arabic?</p>
       <label><input type="radio" name="q1" value="ahlan"> Ahlan</label><br>
       <label><input type="radio" name="q1" value="salam"> Salam</label><br>
+
+      <!-- Question 2 -->
+      <p>What is "Good morning" in Baghdad Arabic?</p>
+      <label><input type="radio" name="q2" value="masa"> Masa al-khayr</label><br>
+      <label><input type="radio" name="q2" value="sabah"> Sabah al-khayr</label><br>
+
+      <!-- Question 3 -->
+      <p>What is "Good evening" in Baghdad Arabic?</p>
+      <label><input type="radio" name="q3" value="masa"> Masa al-khayr</label><br>
+      <label><input type="radio" name="q3" value="sabah"> Sabah al-khayr</label><br>
+
+      <!-- Question 4 -->
+      <p>What is "How are you?" in Baghdad Arabic?</p>
+      <label><input type="radio" name="q4" value="shlonek"> Shlonek?</label><br>
+      <label><input type="radio" name="q4" value="shismek"> Shismek?</label><br>
+
       <button type="submit">Submit</button>
     </form>
 
@@ -26,13 +43,20 @@
     <script>
       document.getElementById('quizForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        const answer = document.querySelector('input[name="q1"]:checked');
-        const result = document.getElementById('result');
-        if (answer && answer.value === 'ahlan') {
-          result.textContent = 'Correct! "Ahlan" means hello.';
-        } else {
-          result.textContent = 'Try again!';
-        }
+        const answers = [
+          document.querySelector('input[name="q1"]:checked')?.value,
+          document.querySelector('input[name="q2"]:checked')?.value,
+          document.querySelector('input[name="q3"]:checked')?.value,
+          document.querySelector('input[name="q4"]:checked')?.value,
+        ];
+        const correctAnswers = ["ahlan", "sabah", "masa", "shlonek"];
+        let score = 0;
+
+        answers.forEach((answer, index) => {
+          if (answer === correctAnswers[index]) score++;
+        });
+
+        document.getElementById('result').textContent = `You scored ${score} out of ${correctAnswers.length}!`;
       });
     </script>
   </div>

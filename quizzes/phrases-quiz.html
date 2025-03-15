@@ -3,21 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz: Common Phrases</title>
+  <title>Quiz: Phrases</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <header>
-    <h1>Quiz: Common Phrases</h1>
+    <h1>Quiz: Phrases</h1>
   </header>
 
   <div class="container">
     <h2>Test Your Knowledge!</h2>
     <form id="quizForm">
-      <p>What is "How are you?" in Baghdad Arabic?</p>
-      <label><input type="radio" name="q1" value="shlonek"> Shlonek?</label><br>
-      <label><input type="radio" name="q1" value="sabah"> Sabah al-khayr</label><br>
+      <!-- Question 1 -->
+      <p>What is "Thank you" in Baghdad Arabic?</p>
+      <label><input type="radio" name="q1" value="shukran"> Shukran</label><br>
+      <label><input type="radio" name="q1" value="minfadlak"> Min fadlak</label><br>
+
+      <!-- Question 2 -->
+      <p>What is "Please" in Baghdad Arabic?</p>
+      <label><input type="radio" name="q2" value="shukran"> Shukran</label><br>
+      <label><input type="radio" name="q2" value="minfadlak"> Min fadlak</label><br>
+
+      <!-- Add more questions for other phrases -->
+      <!-- Repeat similar blocks for all phrases -->
+
       <button type="submit">Submit</button>
     </form>
 
@@ -26,13 +36,19 @@
     <script>
       document.getElementById('quizForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        const answer = document.querySelector('input[name="q1"]:checked');
-        const result = document.getElementById('result');
-        if (answer && answer.value === 'shlonek') {
-          result.textContent = 'Correct! "Shlonek?" means "How are you?"';
-        } else {
-          result.textContent = 'Try again!';
-        }
+        const answers = [
+          document.querySelector('input[name="q1"]:checked')?.value,
+          document.querySelector('input[name="q2"]:checked')?.value,
+          // Add more answer checks for additional questions
+        ];
+        const correctAnswers = ["shukran", "minfadlak"]; // Add all correct answers
+        let score = 0;
+
+        answers.forEach((answer, index) => {
+          if (answer === correctAnswers[index]) score++;
+        });
+
+        document.getElementById('result').textContent = `You scored ${score} out of ${correctAnswers.length}!`;
       });
     </script>
   </div>

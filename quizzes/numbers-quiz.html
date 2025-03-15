@@ -15,9 +15,19 @@
   <div class="container">
     <h2>Test Your Knowledge!</h2>
     <form id="quizForm">
+      <!-- Question 1 -->
       <p>What is "One" in Baghdad Arabic?</p>
       <label><input type="radio" name="q1" value="wahid"> Wahid</label><br>
       <label><input type="radio" name="q1" value="ithnayn"> Ithnayn</label><br>
+
+      <!-- Question 2 -->
+      <p>What is "Two" in Baghdad Arabic?</p>
+      <label><input type="radio" name="q2" value="wahid"> Wahid</label><br>
+      <label><input type="radio" name="q2" value="ithnayn"> Ithnayn</label><br>
+
+      <!-- Add more questions for "Three" to "Ten" -->
+      <!-- Repeat similar blocks for all numbers -->
+
       <button type="submit">Submit</button>
     </form>
 
@@ -26,13 +36,19 @@
     <script>
       document.getElementById('quizForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        const answer = document.querySelector('input[name="q1"]:checked');
-        const result = document.getElementById('result');
-        if (answer && answer.value === 'wahid') {
-          result.textContent = 'Correct! "Wahid" means "One"';
-        } else {
-          result.textContent = 'Try again!';
-        }
+        const answers = [
+          document.querySelector('input[name="q1"]:checked')?.value,
+          document.querySelector('input[name="q2"]:checked')?.value,
+          // Add more answer checks for additional questions
+        ];
+        const correctAnswers = ["wahid", "ithnayn"]; // Add all correct answers
+        let score = 0;
+
+        answers.forEach((answer, index) => {
+          if (answer === correctAnswers[index]) score++;
+        });
+
+        document.getElementById('result').textContent = `You scored ${score} out of ${correctAnswers.length}!`;
       });
     </script>
   </div>

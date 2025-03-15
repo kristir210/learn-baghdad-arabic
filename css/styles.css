@@ -104,12 +104,18 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* Space between sections */
   width: calc(50% - 40px); /* Two columns on larger screens */
+  border: 2px solid #333; /* Add a border around each section */
 }
 
 @media (max-width: 768px) {
   .section {
     width: 100%; /* Full width on smaller screens */
+    margin-bottom: 30px; /* Adjust space between sections on mobile */
   }
+}
+main {
+  background-color: #f4f4f9; /* Light gray background for the main content area */
+  padding: 40px; /* Add some padding around the main content */
 }

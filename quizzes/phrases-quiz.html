@@ -32,9 +32,7 @@
     <h2 id="question">Test Your Knowledge!</h2>
     <form id="quizForm">
       <p id="quizText">What is "Thank you" in Baghdad Arabic?</p>
-      <label><input type="radio" name="answer" value="shukran"> Shukran</label><br>
-      <label><input type="radio" name="answer" value="minfadlak"> Min fadlak</label><br>
-      <button type="submit">Submit</button>
+      <button type="submit" class="hidden">Submit</button>
     </form>
 
     <p id="feedback" class="hidden"></p>
@@ -63,12 +61,15 @@
 
         // Clear previous options
         quizForm.innerHTML = '';
+
+        // Add new options
         currentQuestion.options.forEach(option => {
           const label = document.createElement('label');
           label.innerHTML = `<input type="radio" name="answer" value="${option}"> ${option}<br>`;
           quizForm.appendChild(label);
         });
 
+        // Add the submit button
         const submitButton = document.createElement('button');
         submitButton.type = 'submit';
         submitButton.textContent = 'Submit';

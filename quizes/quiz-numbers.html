@@ -26,9 +26,9 @@
     <script>
       document.getElementById('quizForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        const answer = document.querySelector('input[name="q1"]:checked').value;
+        const answer = document.querySelector('input[name="q1"]:checked');
         const result = document.getElementById('result');
-        if (answer === 'wahid') {
+        if (answer && answer.value === 'wahid') {
           result.textContent = 'Correct! "Wahid" means "One"';
         } else {
           result.textContent = 'Try again!';

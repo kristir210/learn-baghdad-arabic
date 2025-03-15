@@ -26,9 +26,9 @@
     <script>
       document.getElementById('quizForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        const answer = document.querySelector('input[name="q1"]:checked').value;
+        const answer = document.querySelector('input[name="q1"]:checked');
         const result = document.getElementById('result');
-        if (answer === 'shlonek') {
+        if (answer && answer.value === 'shlonek') {
           result.textContent = 'Correct! "Shlonek?" means "How are you?"';
         } else {
           result.textContent = 'Try again!';

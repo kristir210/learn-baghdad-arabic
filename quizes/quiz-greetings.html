@@ -26,9 +26,9 @@
     <script>
       document.getElementById('quizForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        const answer = document.querySelector('input[name="q1"]:checked').value;
+        const answer = document.querySelector('input[name="q1"]:checked');
         const result = document.getElementById('result');
-        if (answer === 'ahlan') {
+        if (answer && answer.value === 'ahlan') {
           result.textContent = 'Correct! "Ahlan" means hello.';
         } else {
           result.textContent = 'Try again!';

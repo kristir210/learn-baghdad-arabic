@@ -91,11 +91,10 @@ body {
     border-radius: 5px;
   }
 }
-/* Section Container */
 .section-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-gap: 40px; /* Space between grid items */
   padding: 40px;
 }
 
@@ -104,8 +103,6 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  margin-bottom: 40px; /* Space between sections */
-  width: calc(50% - 40px); /* Two columns on larger screens */
   border: 2px solid #333; /* Add a border around each section */
 }
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz: Common Phrases</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz: Common Phrases</h1>
+  </header>
+
+  <div class="container">
+    <h2>Test Your Knowledge!</h2>
+    <form id="quizForm">
+      <p>What is "How are you?" in Baghdad Arabic?</p>
+      <label><input type="radio" name="q1" value="shlonek"> Shlonek?</label><br>
+      <label><input type="radio" name="q1" value="sabah"> Sabah al-khayr</label><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+      document.getElementById('quizForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const answer = document.querySelector('input[name="q1"]:checked');
+        const result = document.getElementById('result');
+        if (answer && answer.value === 'shlonek') {
+          result.textContent = 'Correct! "Shlonek?" means "How are you?"';
+        } else {
+          result.textContent = 'Try again!';
+        }
+      });
+    </script>
+  </div>
+
+  <footer>
+    <p>Learn Baghdad Arabic &middot; Made with ❤️ for learners</p>
+  </footer>
+</body>
+</html>

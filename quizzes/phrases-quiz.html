@@ -19,7 +19,7 @@
     }
 
     .container {
-      background-color: black;
+      background-color: #333;
       color: white;
       max-width: 600px;
       padding: 20px;
@@ -71,11 +71,26 @@
 
     <script>
       const questions = [
-        { english: 'Thank you', options: ['shukran', 'minfadlak'], answer: 'shukran' },
-        { english: 'Please', options: ['shukran', 'minfadlak'], answer: 'minfadlak' },
-        { english: 'Excuse me', options: ['afuwan', 'shismek'], answer: 'afuwan' },
-        { english: 'What is your name?', options: ['shismek', 'ismi'], answer: 'shismek' },
-        { english: 'My name is...', options: ['shismek', 'ismi'], answer: 'ismi' },
+        { english: 'Hello', options: ['ahlan', 'salam', 'shukran', 'ismi'], answer: 'ahlan' },
+        { english: 'Good morning', options: ['masa', 'sabah al-khair', 'tisbah', 'yalla'], answer: 'sabah al-khair' },
+        { english: 'Good evening', options: ['masa al-khair', 'sabah', 'khod care', 'yom saeed'], answer: 'masa al-khair' },
+        { english: 'How are you?', options: ['shlonek', 'shismek', 'keef halak', 'ana bikhair'], answer: 'shlonek' },
+        { english: 'Welcome', options: ['ahlan wa sahlan', 'mabrook', 'mtsharfin', 'afuwan'], answer: 'ahlan wa sahlan' },
+        { english: 'Good night', options: ['tisbah ala khair', 'yalla nshufak', 'maa al-salama', 'khod care'], answer: 'tisbah ala khair' },
+        { english: 'See you later', options: ['yalla nshufak baad', 'maa al-salama', 'shlonek', 'ana bikhair'], answer: 'yalla nshufak baad' },
+        { english: 'Goodbye', options: ['maa al-salama', 'yalla nshufak', 'shukran', 'ismi'], answer: 'maa al-salama' },
+        { english: 'What’s up?', options: ['shlonek', 'shismek', 'keef halak', 'ana bikhair'], answer: 'shlonek' },
+        { english: 'Thank you', options: ['shukran', 'minfadlak', 'afuwan', 'ismi'], answer: 'shukran' },
+        { english: 'Please', options: ['minfadlak', 'shukran', 'afuwan', 'ismi'], answer: 'minfadlak' },
+        { english: 'Excuse me', options: ['afuwan', 'shukran', 'minfadlak', 'ismi'], answer: 'afuwan' },
+        { english: 'What is your name?', options: ['shismek', 'ismi', 'shlonek', 'keef halak'], answer: 'shismek' },
+        { english: 'My name is...', options: ['ismi', 'shismek', 'shlonek', 'keef halak'], answer: 'ismi' },
+        { english: 'Nice to meet you', options: ['mtsharfin', 'mabrook', 'ahlan wa sahlan', 'shukran'], answer: 'mtsharfin' },
+        { english: 'How’s it going?', options: ['keef halak', 'shlonek', 'ana bikhair', 'khod care'], answer: 'keef halak' },
+        { english: 'I’m fine', options: ['ana bikhair', 'keef halak', 'shlonek', 'yom saeed'], answer: 'ana bikhair' },
+        { english: 'Take care', options: ['khod care', 'yalla nshufak', 'maa al-salama', 'shukran'], answer: 'khod care' },
+        { english: 'Have a good day', options: ['yom saeed', 'yalla nshufak', 'maa al-salama', 'shukran'], answer: 'yom saeed' },
+        { english: 'Congratulations', options: ['mabrook', 'mtsharfin', 'ahlan wa sahlan', 'shukran'], answer: 'mabrook' },
       ];
 
       let currentQuestionIndex = 0;

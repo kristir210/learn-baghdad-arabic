@@ -19,7 +19,7 @@
     }
 
     .container {
-      background-color: black;
+      background-color: #333;
       color: white;
       max-width: 600px;
       padding: 20px;
@@ -71,16 +71,26 @@
 
     <script>
       const questions = [
-        { english: 'One', options: ['wahid', 'ithnayn'], answer: 'wahid' },
-        { english: 'Two', options: ['wahid', 'ithnayn'], answer: 'ithnayn' },
-        { english: 'Three', options: ['thalatha', 'arbaa'], answer: 'thalatha' },
-        { english: 'Four', options: ['arbaa', 'khamsa'], answer: 'arbaa' },
-        { english: 'Five', options: ['khamsa', 'sitta'], answer: 'khamsa' },
-        { english: 'Six', options: ['sitta', 'sabaa'], answer: 'sitta' },
-        { english: 'Seven', options: ['sabaa', 'thamaaniya'], answer: 'sabaa' },
-        { english: 'Eight', options: ['thamaaniya', 'tisaa'], answer: 'thamaaniya' },
-        { english: 'Nine', options: ['tisaa', 'ashara'], answer: 'tisaa' },
-        { english: 'Ten', options: ['ashara', 'ahadaashar'], answer: 'ashara' },
+        { english: 'One', options: ['wahid', 'ithnayn', 'thalatha', 'arbaa'], answer: 'wahid' },
+        { english: 'Two', options: ['ithnayn', 'wahid', 'sitta', 'khamsa'], answer: 'ithnayn' },
+        { english: 'Three', options: ['thalatha', 'arbaa', 'sabaa', 'tisaa'], answer: 'thalatha' },
+        { english: 'Four', options: ['arbaa', 'khamsa', 'sitta', 'thamaaniya'], answer: 'arbaa' },
+        { english: 'Five', options: ['khamsa', 'sitta', 'sabaa', 'tisaa'], answer: 'khamsa' },
+        { english: 'Six', options: ['sitta', 'khamsa', 'thalatha', 'arbaa'], answer: 'sitta' },
+        { english: 'Seven', options: ['sabaa', 'thamaaniya', 'tisaa', 'ashara'], answer: 'sabaa' },
+        { english: 'Eight', options: ['thamaaniya', 'sabaa', 'tisaa', 'ashara'], answer: 'thamaaniya' },
+        { english: 'Nine', options: ['tisaa', 'ashara', 'ahadaashar', 'ithnaashar'], answer: 'tisaa' },
+        { english: 'Ten', options: ['ashara', 'ahadaashar', 'ithnaashar', 'thalathataashar'], answer: 'ashara' },
+        { english: 'Eleven', options: ['ahadaashar', 'ithnaashar', 'thalathataashar', 'arbaataashar'], answer: 'ahadaashar' },
+        { english: 'Twelve', options: ['ithnaashar', 'ahadaashar', 'arbaataashar', 'khamasataashar'], answer: 'ithnaashar' },
+        { english: 'Thirteen', options: ['thalathataashar', 'arbaataashar', 'khamasataashar', 'sittataashar'], answer: 'thalathataashar' },
+        { english: 'Fourteen', options: ['arbaataashar', 'khamasataashar', 'sittataashar', 'sabaataashar'], answer: 'arbaataashar' },
+        { english: 'Fifteen', options: ['khamasataashar', 'sittataashar', 'sabaataashar', 'thamaaniyataashar'], answer: 'khamasataashar' },
+        { english: 'Sixteen', options: ['sittataashar', 'sabaataashar', 'thamaaniyataashar', 'tisaataashar'], answer: 'sittataashar' },
+        { english: 'Seventeen', options: ['sabaataashar', 'thamaaniyataashar', 'tisaataashar', 'ishrun'], answer: 'sabaataashar' },
+        { english: 'Eighteen', options: ['thamaaniyataashar', 'tisaataashar', 'ishrun', 'ashara'], answer: 'thamaaniyataashar' },
+        { english: 'Nineteen', options: ['tisaataashar', 'ishrun', 'ashara', 'ahadaashar'], answer: 'tisaataashar' },
+        { english: 'Twenty', options: ['ishrun', 'tisaataashar', 'ahadaashar', 'ithnaashar'], answer: 'ishrun' },
       ];
 
       let currentQuestionIndex = 0;

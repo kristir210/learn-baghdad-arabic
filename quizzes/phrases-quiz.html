@@ -147,14 +147,14 @@
           feedback.className = 'correct';
           score++;
         } else {
-          feedback.textContent = 'Incorrect! Resetting quiz...';
+          feedback.textContent = `Incorrect! The correct answer is "${currentQuestion.answer}".`;
           feedback.className = 'incorrect';
           setTimeout(() => {
             currentQuestionIndex = 0;
             score = 0;
             loadQuestion();
             updateScore();
-          }, 2000);
+          }, 4000); // Wait 4 seconds to allow the user to read the correct answer
           return;
         }
 

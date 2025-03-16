@@ -3,17 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz: Phrases</title>
+  <title>Quiz: Greetings</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
   <style>
+    body {
+      background-color: #f9f9f9; /* Light gray background */
+      color: black; /* Default text color */
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      background-color: white; /* White background for the quiz container */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    #quizText {
+      color: black; /* Ensure question text is visible */
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
     .hidden { display: none; }
     .correct { color: green; font-weight: bold; animation: fadeIn 1s; }
     .incorrect { color: red; font-weight: bold; animation: shake 0.5s; }
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
+
     @keyframes shake {
       0% { transform: translateX(0); }
       25% { transform: translateX(-10px); }
@@ -25,13 +58,13 @@
 </head>
 <body>
   <header>
-    <h1>Quiz: Phrases</h1>
+    <h1>Quiz: Greetings</h1>
   </header>
 
   <div class="container">
     <h2 id="question">Test Your Knowledge!</h2>
     <form id="quizForm">
-      <p id="quizText">What is "Thank you" in Baghdad Arabic?</p>
+      <p id="quizText"></p>
       <button type="submit" class="hidden">Submit</button>
     </form>
 
@@ -40,11 +73,10 @@
 
     <script>
       const questions = [
-        { text: 'What is "Thank you" in Baghdad Arabic?', options: ['shukran', 'minfadlak'], answer: 'shukran' },
-        { text: 'What is "Please" in Baghdad Arabic?', options: ['shukran', 'minfadlak'], answer: 'minfadlak' },
-        { text: 'What is "Excuse me" in Baghdad Arabic?', options: ['afuwan', 'shismek'], answer: 'afuwan' },
-        { text: 'What is "What is your name?" in Baghdad Arabic?', options: ['shismek', 'ismi'], answer: 'shismek' },
-        { text: 'What is "My name is..." in Baghdad Arabic?', options: ['shismek', 'ismi'], answer: 'ismi' },
+        { english: 'Hello', options: ['ahlan', 'salam'], answer: 'ahlan' },
+        { english: 'Good morning', options: ['masa', 'sabah'], answer: 'sabah' },
+        { english: 'Good evening', options: ['masa', 'sabah'], answer: 'masa' },
+        { english: 'How are you?', options: ['shlonek', 'shismek'], answer: 'shlonek' },
       ];
 
       let currentQuestionIndex = 0;
@@ -57,7 +89,7 @@
 
       function loadQuestion() {
         const currentQuestion = questions[currentQuestionIndex];
-        quizText.textContent = currentQuestion.text;
+        quizText.textContent = `How do you say "${currentQuestion.english}" in Baghdad Arabic?`;
 
         // Clear previous options
         quizForm.innerHTML = '';
@@ -123,7 +155,7 @@
         scoreValue.textContent = score;
       }
 
-      // Load the first question
+      // Load the first question when the page loads
       loadQuestion();
     </script>
   </div>

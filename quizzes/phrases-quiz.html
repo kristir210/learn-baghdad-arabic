@@ -3,38 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz: Greetings</title>
+  <title>Quiz: Phrases</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css">
   <style>
     body {
-      background-color: #f9f9f9; /* Light gray background */
-      color: black; /* Default text color */
+      background-color: black;
+      color: white;
       font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: black;
+      color: white;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    h1, h2 {
       margin: 0;
       padding: 0;
     }
 
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    .container {
-      background-color: white; /* White background for the quiz container */
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    #quizText {
-      color: black; /* Ensure question text is visible */
-      font-size: 1.2em;
-      font-weight: bold;
+    #question {
       margin-bottom: 1rem;
     }
 
@@ -57,15 +56,14 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Quiz: Greetings</h1>
-  </header>
-
   <div class="container">
-    <h2 id="question">Test Your Knowledge!</h2>
+    <h1 id="quizTitle">Quiz: Phrases</h1>
+    <h2 id="instruction">Test Your Knowledge!</h2>
+    <p id="quizText"></p>
+
     <form id="quizForm">
-      <p id="quizText"></p>
-      <button type="submit" class="hidden">Submit</button>
+      <div id="options"></div>
+      <button type="submit" id="submitButton" class="hidden">Submit</button>
     </form>
 
     <p id="feedback" class="hidden"></p>
@@ -73,39 +71,38 @@
 
     <script>
       const questions = [
-        { english: 'Hello', options: ['ahlan', 'salam'], answer: 'ahlan' },
-        { english: 'Good morning', options: ['masa', 'sabah'], answer: 'sabah' },
-        { english: 'Good evening', options: ['masa', 'sabah'], answer: 'masa' },
-        { english: 'How are you?', options: ['shlonek', 'shismek'], answer: 'shlonek' },
+        { english: 'Thank you', options: ['shukran', 'minfadlak'], answer: 'shukran' },
+        { english: 'Please', options: ['shukran', 'minfadlak'], answer: 'minfadlak' },
+        { english: 'Excuse me', options: ['afuwan', 'shismek'], answer: 'afuwan' },
+        { english: 'What is your name?', options: ['shismek', 'ismi'], answer: 'shismek' },
+        { english: 'My name is...', options: ['shismek', 'ismi'], answer: 'ismi' },
       ];
 
       let currentQuestionIndex = 0;
       let score = 0;
 
       const quizText = document.getElementById('quizText');
+      const optionsContainer = document.getElementById('options');
       const feedback = document.getElementById('feedback');
       const scoreValue = document.getElementById('scoreValue');
-      const quizForm = document.getElementById('quizForm');
+      const submitButton = document.getElementById('submitButton');
 
       function loadQuestion() {
         const currentQuestion = questions[currentQuestionIndex];
         quizText.textContent = `How do you say "${currentQuestion.english}" in Baghdad Arabic?`;
 
         // Clear previous options
-        quizForm.innerHTML = '';
+        optionsContainer.innerHTML = '';
 
         // Add new options
         currentQuestion.options.forEach(option => {
           const label = document.createElement('label');
           label.innerHTML = `<input type="radio" name="answer" value="${option}"> ${option}<br>`;
-          quizForm.appendChild(label);
+          optionsContainer.appendChild(label);
         });
 
-        // Add the submit button
-        const submitButton = document.createElement('button');
-        submitButton.type = 'submit';
-        submitButton.textContent = 'Submit';
-        quizForm.appendChild(submitButton);
+        // Show the submit button
+        submitButton.classList.remove('hidden');
       }
 
       quizForm.addEventListener('submit', function (e) {
@@ -159,9 +156,5 @@
       loadQuestion();
     </script>
   </div>
-
-  <footer>
-    <p>Learn Baghdad Arabic &middot; Made with ❤️ for learners</p>
-  </footer>
 </body>
 </html>

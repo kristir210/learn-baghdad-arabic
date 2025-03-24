@@ -93,8 +93,10 @@
         { english: 'Congratulations', options: ['mabrook', 'mtsharfin', 'ahlan wa sahlan', 'shukran'], answer: 'mabrook' },
       ];
 
+      let shuffledQuestions = shuffleArray([...questions]); // Shuffle questions initially
       let currentQuestionIndex = 0;
       let score = 0;
+      let strikes = 0;
 
       const quizText = document.getElementById('quizText');
       const optionsContainer = document.getElementById('options');
@@ -111,7 +113,7 @@
       }
 
       function loadQuestion() {
-        const currentQuestion = questions[currentQuestionIndex];
+        const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
         // Shuffle the options array to randomize the order
         const shuffledOptions = shuffleArray([...currentQuestion.options]);
@@ -141,31 +143,40 @@
           return;
         }
 
-        const currentQuestion = questions[currentQuestionIndex];
+        const currentQuestion = shuffledQuestions[currentQuestionIndex];
         if (selectedAnswer === currentQuestion.answer) {
           feedback.textContent = 'Correct!';
           feedback.className = 'correct';
           score++;
+          strikes = 0; // Reset strikes on correct answer
         } else {
-          feedback.textContent = `Incorrect! The correct answer is "${currentQuestion.answer}".`;
-          feedback.className = 'incorrect';
-          setTimeout(() => {
-            currentQuestionIndex = 0;
-            score = 0;
-            loadQuestion();
-            updateScore();
-          }, 4000); // Wait 4 seconds to allow the user to read the correct answer
-          return;
+          strikes++;
+          if (strikes > 3) {
+            feedback.textContent = "You’ve used all 3 attempts. Starting over in 5 seconds...";
+            feedback.className = 'incorrect';
+            setTimeout(() => {
+              shuffledQuestions = shuffleArray([...questions]); // Reshuffle questions
+              currentQuestionIndex = 0;
+              score = 0;
+              strikes = 0;
+              loadQuestion();
+              updateScore();
+            }, 5000); // 5-second delay
+            return;
+          } else {
+            feedback.textContent = `Incorrect! The correct answer is "${currentQuestion.answer}". You have ${3 - strikes} attempts left.`;
+            feedback.className = 'incorrect';
+          }
         }
 
         feedback.classList.remove('hidden');
         currentQuestionIndex++;
 
-        if (currentQuestionIndex < questions.length) {
+        if (currentQuestionIndex < shuffledQuestions.length) {
           setTimeout(() => {
             feedback.classList.add('hidden');
             loadQuestion();
-          }, 1000);
+          }, 4000); // 4-second delay for feedback
         } else {
           feedback.textContent = 'Quiz complete! Great job!';
           feedback.className = 'correct';

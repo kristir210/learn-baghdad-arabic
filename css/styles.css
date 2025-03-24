@@ -1,96 +1,100 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* White text for readability */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
-  }
-  
-  header.full-height {
-    background-color: #000000; /* Pure black */
-    color: #ffffff; /* White text */
-    flex: 1; /* Make the header take up remaining space */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .content-container {
-    max-width: 800px;
-    padding: 20px;
-    background-color: #1e1e1e; /* Dark gray container */
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #ffffff; /* White title */
-  }
-  
-  .slogan {
-    font-size: 1.2em;
-    font-style: italic;
-    color: #aaaaaa; /* Light gray for slogan */
-    margin-top: 10px;
-    direction: rtl; /* Right-to-left text direction for Arabic */
-  }
-  
-  a {
-    color: #03dac6; /* Teal for links */
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    display: inline-block; /* Ensure links can have padding */
-    padding: 10px 15px; /* Add padding to make links easier to tap */
-    border-radius: 5px; /* Rounded corners for a clean look */
-  }
-  
-  a:hover {
-    color: #ffffff; /* White text on hover */
-    background-color: #018786; /* Highlight links on hover/tap */
-  }
-  
-  ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #000000; /* Pure black */
-    color: #aaaaaa; /* Light gray text */
-    font-size: 0.9em;
-    margin-top: auto; /* Push the footer to the bottom */
-  }
-  /* Responsive Styles */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text for readability */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+header.full-height {
+  background-color: #000000; /* Pure black */
+  color: #ffffff; /* White text */
+  flex: 1; /* Make the header take up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark gray container */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  overflow-y: auto; /* Enable vertical scrolling for long content */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #ffffff; /* White title */
+}
+
+.slogan {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #aaaaaa; /* Light gray for slogan */
+  margin-top: 10px;
+  direction: rtl; /* Right-to-left text direction for Arabic */
+}
+
+a {
+  color: #03dac6; /* Teal for links */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block; /* Ensure links can have padding */
+  padding: 10px 15px; /* Add padding to make links easier to tap */
+  border-radius: 5px; /* Rounded corners for a clean look */
+}
+
+a:hover {
+  color: #ffffff; /* White text on hover */
+  background-color: #018786; /* Highlight links on hover/tap */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #000000; /* Pure black */
+  color: #aaaaaa; /* Light gray text */
+  font-size: 0.9em;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2em; /* Slightly smaller title for mobile */
+      font-size: 2em; /* Slightly smaller title for mobile */
   }
 
   .slogan {
-    font-size: 1em; /* Slightly smaller slogan */
+      font-size: 1em; /* Slightly smaller slogan */
   }
 
   .content-container {
-    padding: 15px; /* Reduce padding for smaller screens */
+      padding: 15px; /* Reduce padding for smaller screens */
+      font-size: 14px; /* Smaller font size for better readability */
   }
 
   a {
-    font-size: 1em; /* Adjust link size for readability */
-    padding: 10px 15px; /* Make links easier to tap */
-    border-radius: 5px;
+      font-size: 1em; /* Adjust link size for readability */
+      padding: 10px 15px; /* Make links easier to tap */
+      border-radius: 5px;
   }
 }
+
 .section-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal columns */
@@ -104,14 +108,17 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   padding: 20px;
   border: 2px solid #333; /* Add a border around each section */
+  overflow-y: auto; /* Enable vertical scrolling for sections with long content */
 }
 
 @media (max-width: 768px) {
   .section {
-    width: 100%; /* Full width on smaller screens */
-    margin-bottom: 30px; /* Adjust space between sections on mobile */
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 30px; /* Adjust space between sections on mobile */
+      padding: 15px; /* Reduce padding for smaller screens */
   }
 }
+
 main {
   background-color: #000000; /* Pure black */
   padding: 40px;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz: Phrases</title>
+  <title>Quiz: Everyday Phrases</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -73,7 +73,7 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="quizTitle">Quiz: Phrases</h1>
+    <h1 id="quizTitle">Quiz: Everyday Phrases</h1>
     <h2 id="instruction">Test Your Knowledge!</h2>
 
     <!-- Progress Bar -->
@@ -94,26 +94,25 @@
 
     <script>
       const questions = [
-        { english: 'Hello', options: ['ahlan', 'salam', 'shukran', 'ismi'], answer: 'ahlan' },
-        { english: 'Good morning', options: ['masa', 'sabah al-khair', 'tisbah', 'yalla'], answer: 'sabah al-khair' },
-        { english: 'Good evening', options: ['masa al-khair', 'sabah', 'khod care', 'yom saeed'], answer: 'masa al-khair' },
-        { english: 'How are you?', options: ['shlonek', 'shismek', 'keef halak', 'ana bikhair'], answer: 'shlonek' },
-        { english: 'Welcome', options: ['ahlan wa sahlan', 'mabrook', 'mtsharfin', 'afuwan'], answer: 'ahlan wa sahlan' },
-        { english: 'Good night', options: ['tisbah ala khair', 'yalla nshufak', 'maa al-salama', 'khod care'], answer: 'tisbah ala khair' },
-        { english: 'See you later', options: ['yalla nshufak baad', 'maa al-salama', 'shlonek', 'ana bikhair'], answer: 'yalla nshufak baad' },
-        { english: 'Goodbye', options: ['maa al-salama', 'yalla nshufak', 'shukran', 'ismi'], answer: 'maa al-salama' },
-        { english: 'What’s up?', options: ['shlonek', 'shismek', 'keef halak', 'ana bikhair'], answer: 'shlonek' },
-        { english: 'Thank you', options: ['shukran', 'minfadlak', 'afuwan', 'ismi'], answer: 'shukran' },
-        { english: 'Please', options: ['minfadlak', 'shukran', 'afuwan', 'ismi'], answer: 'minfadlak' },
-        { english: 'Excuse me', options: ['afuwan', 'shukran', 'minfadlak', 'ismi'], answer: 'afuwan' },
-        { english: 'What is your name?', options: ['shismek', 'ismi', 'shlonek', 'keef halak'], answer: 'shismek' },
-        { english: 'My name is...', options: ['ismi', 'shismek', 'shlonek', 'keef halak'], answer: 'ismi' },
-        { english: 'Nice to meet you', options: ['mtsharfin', 'mabrook', 'ahlan wa sahlan', 'shukran'], answer: 'mtsharfin' },
-        { english: 'How’s it going?', options: ['keef halak', 'shlonek', 'ana bikhair', 'khod care'], answer: 'keef halak' },
-        { english: 'I’m fine', options: ['ana bikhair', 'keef halak', 'shlonek', 'yom saeed'], answer: 'ana bikhair' },
-        { english: 'Take care', options: ['khod care', 'yalla nshufak', 'maa al-salama', 'shukran'], answer: 'khod care' },
-        { english: 'Have a good day', options: ['yom saeed', 'yalla nshufak', 'maa al-salama', 'shukran'], answer: 'yom saeed' },
-        { english: 'Congratulations', options: ['mabrook', 'mtsharfin', 'ahlan wa sahlan', 'shukran'], answer: 'mabrook' },
+        { english: 'Thank you', options: ['shukran', 'minfadlak', 'afwan', 'tamam'], answer: 'shukran' },
+        { english: 'Please', options: ['minfadlak', 'shukran', 'afwan', 'tamam'], answer: 'minfadlak' },
+        { english: 'Excuse me', options: ['afwan', 'shukran', 'minfadlak', 'tamam'], answer: 'afwan' },
+        { english: 'Sorry', options: ['asif', 'shukran', 'minfadlak', 'afwan'], answer: 'asif' },
+        { english: 'Yes', options: ['aiwa', 'la', 'shukran', 'tamam'], answer: 'aiwa' },
+        { english: 'No', options: ['la', 'aiwa', 'shukran', 'tamam'], answer: 'la' },
+        { english: 'How much is this?', options: ['besh hal?', 'shino hada?', 'ana biddi musa’ada', 'tamam'], answer: 'besh hal?' },
+        { english: 'I don’t understand', options: ['ma fahimt', 'shino hada?', 'ana biddi musa’ada', 'tamam'], answer: 'ma fahimt' },
+        { english: 'Can you repeat that?', options: ['tislam tkrar?', 'shino hada?', 'ana biddi musa’ada', 'tamam'], answer: 'tislam tkrar?' },
+        { english: 'I’m hungry', options: ['ana ju’aan', 'ana athshan', 'wayn il-hammam?', 'tamam'], answer: 'ana ju’aan' },
+        { english: 'I’m thirsty', options: ['ana athshan', 'ana ju’aan', 'wayn il-hammam?', 'tamam'], answer: 'ana athshan' },
+        { english: 'Where is the bathroom?', options: ['wayn il-hammam?', 'shino hada?', 'ana biddi musa’ada', 'tamam'], answer: 'wayn il-hammam?' },
+        { english: 'What is this?', options: ['shino hada?', 'wayn il-hammam?', 'ana biddi musa’ada', 'tamam'], answer: 'shino hada?' },
+        { english: 'I need help', options: ['ana biddi musa’ada', 'shino hada?', 'wayn il-hammam?', 'tamam'], answer: 'ana biddi musa’ada' },
+        { english: 'It’s okay', options: ['tamam', 'shukran', 'minfadlak', 'afwan'], answer: 'tamam' },
+        { english: 'Very good', options: ['kteer mnih', 'tamam', 'shukran', 'minfadlak'], answer: 'kteer mnih' },
+        { english: 'I don’t know', options: ['ma a’rif', 'shino hada?', 'wayn il-hammam?', 'tamam'], answer: 'ma a’rif' },
+        { english: 'Let’s go', options: ['yallah nroo7', 'tamam', 'shukran', 'minfadlak'], answer: 'yallah nroo7' },
+        { english: 'See you later', options: ['yallah nshufak baad', 'tamam', 'shukran', 'minfadlak'], answer: 'yallah nshufak baad' },
       ];
 
       let shuffledQuestions = shuffleArray([...questions]); // Shuffle questions initially

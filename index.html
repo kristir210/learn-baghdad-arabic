@@ -103,50 +103,118 @@
       text-align: center;
       margin-top: 20px;
     }
+
+    /* Language Switcher Styling */
+    #language-switcher {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    #language-switcher button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    #language-switcher button:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Language Switcher -->
+    <div id="language-switcher">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('no')">Norsk</button>
+    </div>
+
     <!-- Top Slogan in Baghdad Arabic -->
-    <p class="slogan-top">مرحباً بكم في تعلم اللهجة البغدادية!</p>
+    <p class="slogan-top" id="sloganTop">مرحباً بكم في تعلم اللهجة البغدادية!</p>
 
-    <h1>Welcome to Learn Baghdad Arabic</h1>
-    <p>This website is designed to help you learn basic Baghdad Arabic phrases, greetings, and numbers.</p>
+    <h1 id="pageTitle">Welcome to Learn Baghdad Arabic</h1>
+    <p id="pageDescription">This website is designed to help you learn basic Baghdad Arabic phrases, greetings, and numbers.</p>
 
     <section class="section">
-      <h2>Learn new words and phrases</h2>
+      <h2 id="learnSectionTitle">Learn new words and phrases</h2>
       <ul>
-        <li><a href="lessons/greetings.html">Lesson 1: Greetings</a></li>
-        <li><a href="lessons/phrases.html">Lesson 2: Common Phrases</a></li>
-        <li><a href="lessons/numbers.html">Lesson 3: Numbers</a></li>
+        <li><a href="lessons/greetings.html" id="greetingsLink">Lesson 1: Greetings</a></li>
+        <li><a href="lessons/phrases.html" id="phrasesLink">Lesson 2: Common Phrases</a></li>
+        <li><a href="lessons/numbers.html" id="numbersLink">Lesson 3: Numbers</a></li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>Practice new words and phrases</h2>
+      <h2 id="practiceSectionTitle">Practice new words and phrases</h2>
       <ul>
-        <li><a href="practice/practice-greetings.html">Lesson 1: Greetings</a></li>
-        <li><a href="practice/practice-phrases.html">Lesson 2: Common Phrases</a></li>
-        <li><a href="practice/practice-numbers.html">Lesson 3: Numbers</a></li>
+        <li><a href="practice/practice-greetings.html" id="practiceGreetingsLink">Lesson 1: Greetings</a></li>
+        <li><a href="practice/practice-phrases.html" id="practicePhrasesLink">Lesson 2: Common Phrases</a></li>
+        <li><a href="practice/practice-numbers.html" id="practiceNumbersLink">Lesson 3: Numbers</a></li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>Quiz</h2>
+      <h2 id="quizSectionTitle">Quiz</h2>
       <ul>
-        <li><a href="quizzes/greetings-quiz.html">Quiz: Greetings</a></li>
-        <li><a href="quizzes/phrases-quiz.html">Quiz: Phrases</a></li>
-        <li><a href="quizzes/numbers-quiz.html">Quiz: Numbers</a></li>
+        <li><a href="quizzes/greetings-quiz.html" id="quizGreetingsLink">Quiz: Greetings</a></li>
+        <li><a href="quizzes/phrases-quiz.html" id="quizPhrasesLink">Quiz: Phrases</a></li>
+        <li><a href="quizzes/numbers-quiz.html" id="quizNumbersLink">Quiz: Numbers</a></li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>For future content</h2>
-      <p>This section is reserved for future content.</p>
+      <h2 id="futureContentTitle">For future content</h2>
+      <p id="futureContentDescription">This section is reserved for future content.</p>
     </section>
 
     <!-- Bottom Slogan in English -->
-    <p class="slogan-bottom">"Learning a new language opens doors to new worlds."</p>
+    <p class="slogan-bottom" id="sloganBottom">"Learning a new language opens doors to new worlds."</p>
   </div>
+
+  <!-- Script Block (Added at the bottom of the body) -->
+  <script>
+    // Step 1: Determine the user's language (default to 'en')
+    const language = localStorage.getItem('language') || 'en';
+
+    // Step 2: Fetch the translation file
+    fetch('translations/home.json') // Replace with the correct path for each page
+      .then(response => response.json())
+      .then(data => {
+        const translations = data[language];
+
+        // Step 3: Update the page with translations
+        document.getElementById('pageTitle').textContent = translations.pageTitle;
+        document.getElementById('pageDescription').textContent = translations.pageDescription;
+
+        // Update other elements as needed
+        document.getElementById('learnSectionTitle').textContent = translations.learnSectionTitle;
+        document.getElementById('practiceSectionTitle').textContent = translations.practiceSectionTitle;
+        document.getElementById('quizSectionTitle').textContent = translations.quizSectionTitle;
+        document.getElementById('futureContentTitle').textContent = translations.futureContentTitle;
+        document.getElementById('futureContentDescription').textContent = translations.futureContentDescription;
+        document.getElementById('sloganTop').textContent = translations.sloganTop;
+        document.getElementById('sloganBottom').textContent = translations.sloganBottom;
+        document.getElementById('greetingsLink').textContent = translations.greetingsLink;
+        document.getElementById('phrasesLink').textContent = translations.phrasesLink;
+        document.getElementById('numbersLink').textContent = translations.numbersLink;
+        document.getElementById('practiceGreetingsLink').textContent = translations.practiceGreetingsLink;
+        document.getElementById('practicePhrasesLink').textContent = translations.practicePhrasesLink;
+        document.getElementById('practiceNumbersLink').textContent = translations.practiceNumbersLink;
+        document.getElementById('quizGreetingsLink').textContent = translations.quizGreetingsLink;
+        document.getElementById('quizPhrasesLink').textContent = translations.quizPhrasesLink;
+        document.getElementById('quizNumbersLink').textContent = translations.quizNumbersLink;
+      })
+      .catch(error => console.error('Error loading translations:', error));
+
+    // Step 4: Handle language change
+    function setLanguage(selectedLanguage) {
+      localStorage.setItem('language', selectedLanguage); // Save the selected language
+      location.reload(); // Reload the page to apply the new language
+    }
+  </script>
 </body>
 </html>

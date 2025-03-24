@@ -1,0 +1,74 @@
+{
+  "en": {
+    "title": "Quiz: Greetings",
+    "description": "Test your knowledge of greetings in Baghdad Arabic:",
+    "questions": [
+      { "english": "Hello", "options": ["Marhaba", "Sabah al-noor", "Masa al-jamal", "Keefak?"], "answer": "Marhaba" },
+      { "english": "Good morning", "options": ["Sabah al-noor", "Masa al-jamal", "Keefak?", "Ahlan bik"], "answer": "Sabah al-noor" },
+      { "english": "Good evening", "options": ["Masa al-jamal", "Tisbah bikhair", "Nshufak baadan", "Fi aman Allah"], "answer": "Masa al-jamal" },
+      { "english": "How are you?", "options": ["Keefak?", "Kayf yomak?", "Ana bikhair, shukran", "Khod care nafsak"], "answer": "Keefak?" },
+      { "english": "Welcome", "options": ["Ahlan bik", "Assalamu alaykum", "Wa alaykum assalam", "Safar sa’eed"], "answer": "Ahlan bik" },
+      { "english": "Good night", "options": ["Tisbah bikhair", "Shlon halak?", "Nshufak baadan", "Fi aman Allah"], "answer": "Tisbah bikhair" },
+      { "english": "See you later", "options": ["Nshufak baadan", "Fi aman Allah", "Assalamu alaykum", "Wa alaykum assalam"], "answer": "Nshufak baadan" },
+      { "english": "Goodbye", "options": ["Fi aman Allah", "Assalamu alaykum", "Wa alaykum assalam", "Min zamman ma shufnak"], "answer": "Fi aman Allah" },
+      { "english": "What’s up?", "options": ["Shlon halak?", "Kayf yomak?", "Ana bikhair, shukran", "Khod care nafsak"], "answer": "Shlon halak?" },
+      { "english": "Pleased to meet you", "options": ["Mutasharraf", "Kayf kunak?", "Kol el tawaafuk", "Allah ybarik fik"], "answer": "Mutasharraf" },
+      { "english": "How’s your day?", "options": ["Kayf yomak?", "Ana bikhair, shukran", "Khod care nafsak", "Safar sa’eed"], "answer": "Kayf yomak?" },
+      { "english": "I’m doing well", "options": ["Ana bikhair, shukran", "Khod care nafsak", "Safar sa’eed", "Allah ybarik fik"], "answer": "Ana bikhair, shukran" },
+      { "english": "Take care of yourself", "options": ["Khod care nafsak", "Safar sa’eed", "Allah ybarik fik", "Assalamu alaykum"], "answer": "Khod care nafsak" },
+      { "english": "Have a safe journey", "options": ["Safar sa’eed", "Allah ybarik fik", "Assalamu alaykum", "Wa alaykum assalam"], "answer": "Safar sa’eed" },
+      { "english": "May God bless you", "options": ["Allah ybarik fik", "Assalamu alaykum", "Wa alaykum assalam", "Min zamman ma shufnak"], "answer": "Allah ybarik fik" },
+      { "english": "Peace be upon you", "options": ["Assalamu alaykum", "Wa alaykum assalam", "Min zamman ma shufnak", "Kayf kunak?"], "answer": "Assalamu alaykum" },
+      { "english": "And peace upon you", "options": ["Wa alaykum assalam", "Min zamman ma shufnak", "Kayf kunak?", "Kol el tawaafuk"], "answer": "Wa alaykum assalam" },
+      { "english": "Long time no see", "options": ["Min zamman ma shufnak", "Kayf kunak?", "Kol el tawaafuk", "Mutasharraf"], "answer": "Min zamman ma shufnak" },
+      { "english": "How have you been?", "options": ["Kayf kunak?", "Kol el tawaafuk", "Mutasharraf", "Shlon halak?"], "answer": "Kayf kunak?" },
+      { "english": "Wishing you all the best", "options": ["Kol el tawaafuk", "Mutasharraf", "Shlon halak?", "Ana bikhair, shukran"], "answer": "Kol el tawaafuk" }
+    ],
+    "ui": {
+      "backToHome": "Back to Home",
+      "loading": "Loading...",
+      "correct": "Correct!",
+      "incorrect": "Incorrect. The correct answer is",
+      "quizComplete": "Quiz complete! Great job!",
+      "allAttemptsUsed": "You’ve used all 3 attempts. Starting over in 5 seconds...",
+      "submit": "Submit",
+      "questionProgress": "Question {current} of {total}"
+    }
+  },
+  "no": {
+    "title": "Quiz: Hilsener",
+    "description": "Test din kunnskap om hilsener på bagdad-arabisk:",
+    "questions": [
+      { "english": "Hei", "options": ["Marhaba", "Sabah al-noor", "Masa al-jamal", "Keefak?"], "answer": "Marhaba" },
+      { "english": "God morgen", "options": ["Sabah al-noor", "Masa al-jamal", "Keefak?", "Ahlan bik"], "answer": "Sabah al-noor" },
+      { "english": "God kveld", "options": ["Masa al-jamal", "Tisbah bikhair", "Nshufak baadan", "Fi aman Allah"], "answer": "Masa al-jamal" },
+      { "english": "Hvordan går det?", "options": ["Keefak?", "Kayf yomak?", "Ana bikhair, shukran", "Khod care nafsak"], "answer": "Keefak?" },
+      { "english": "Velkommen", "options": ["Ahlan bik", "Assalamu alaykum", "Wa alaykum assalam", "Safar sa’eed"], "answer": "Ahlan bik" },
+      { "english": "God natt", "options": ["Tisbah bikhair", "Shlon halak?", "Nshufak baadan", "Fi aman Allah"], "answer": "Tisbah bikhair" },
+      { "english": "Vi sees senere", "options": ["Nshufak baadan", "Fi aman Allah", "Assalamu alaykum", "Wa alaykum assalam"], "answer": "Nshufak baadan" },
+      { "english": "Farvel", "options": ["Fi aman Allah", "Assalamu alaykum", "Wa alaykum assalam", "Min zamman ma shufnak"], "answer": "Fi aman Allah" },
+      { "english": "Hva skjer?", "options": ["Shlon halak?", "Kayf yomak?", "Ana bikhair, shukran", "Khod care nafsak"], "answer": "Shlon halak?" },
+      { "english": "Fint å møte deg", "options": ["Mutasharraf", "Kayf kunak?", "Kol el tawaafuk", "Allah ybarik fik"], "answer": "Mutasharraf" },
+      { "english": "Hvordan er dagen din?", "options": ["Kayf yomak?", "Ana bikhair, shukran", "Khod care nafsak", "Safar sa’eed"], "answer": "Kayf yomak?" },
+      { "english": "Jeg har det bra", "options": ["Ana bikhair, shukran", "Khod care nafsak", "Safar sa’eed", "Allah ybarik fik"], "answer": "Ana bikhair, shukran" },
+      { "english": "Pass på deg selv", "options": ["Khod care nafsak", "Safar sa’eed", "Allah ybarik fik", "Assalamu alaykum"], "answer": "Khod care nafsak" },
+      { "english": "Ha en trygg reise", "options": ["Safar sa’eed", "Allah ybarik fik", "Assalamu alaykum", "Wa alaykum assalam"], "answer": "Safar sa’eed" },
+      { "english": "Må Gud velsigne deg", "options": ["Allah ybarik fik", "Assalamu alaykum", "Wa alaykum assalam", "Min zamman ma shufnak"], "answer": "Allah ybarik fik" },
+      { "english": "Fred være med deg", "options": ["Assalamu alaykum", "Wa alaykum assalam", "Min zamman ma shufnak", "Kayf kunak?"], "answer": "Assalamu alaykum" },
+      { "english": "Og fred være med deg", "options": ["Wa alaykum assalam", "Min zamman ma shufnak", "Kayf kunak?", "Kol el tawaafuk"], "answer": "Wa alaykum assalam" },
+      { "english": "Lenge siden sist", "options": ["Min zamman ma shufnak", "Kayf kunak?", "Kol el tawaafuk", "Mutasharraf"], "answer": "Min zamman ma shufnak" },
+      { "english": "Hvordan har du det?", "options": ["Kayf kunak?", "Kol el tawaafuk", "Mutasharraf", "Shlon halak?"], "answer": "Kayf kunak?" },
+      { "english": "Ønsker deg alt mulig godt", "options": ["Kol el tawaafuk", "Mutasharraf", "Shlon halak?", "Ana bikhair, shukran"], "answer": "Kol el tawaafuk" }
+    ],
+    "ui": {
+      "backToHome": "Tilbake til hjem",
+      "loading": "Laster...",
+      "correct": "Riktig!",
+      "incorrect": "Feil. Det riktige svaret er",
+      "quizComplete": "Quiz fullført! Bra jobbet!",
+      "allAttemptsUsed": "Du har brukt alle 3 forsøk. Starter på nytt om 5 sekunder...",
+      "submit": "Send inn",
+      "questionProgress": "Spørsmål {current} av {total}"
+    }
+  }
+}

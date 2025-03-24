@@ -1,0 +1,54 @@
+{
+    "en": {
+      "title": "Quiz: Numbers",
+      "description": "Test your knowledge of numbers in Baghdad Arabic:",
+      "questions": [
+        { "english": "One", "options": ["Wahid", "Ithnayn", "Thalatha", "Arba’a"], "answer": "Wahid" },
+        { "english": "Two", "options": ["Ithnayn", "Thalatha", "Arba’a", "Khamsa"], "answer": "Ithnayn" },
+        { "english": "Three", "options": ["Thalatha", "Arba’a", "Khamsa", "Sitta"], "answer": "Thalatha" },
+        { "english": "Four", "options": ["Arba’a", "Khamsa", "Sitta", "Sab’a"], "answer": "Arba’a" },
+        { "english": "Five", "options": ["Khamsa", "Sitta", "Sab’a", "Thamaniya"], "answer": "Khamsa" },
+        { "english": "Six", "options": ["Sitta", "Sab’a", "Thamaniya", "Tis’a"], "answer": "Sitta" },
+        { "english": "Seven", "options": ["Sab’a", "Thamaniya", "Tis’a", "Ashara"], "answer": "Sab’a" },
+        { "english": "Eight", "options": ["Thamaniya", "Tis’a", "Ashara", "Ahada ‘ashar"], "answer": "Thamaniya" },
+        { "english": "Nine", "options": ["Tis’a", "Ashara", "Ahada ‘ashar", "Ishrin"], "answer": "Tis’a" },
+        { "english": "Ten", "options": ["Ashara", "Ahada ‘ashar", "Ishrin", "Thalatha"], "answer": "Ashara" },
+        { "english": "Eleven", "options": ["Ahada ‘ashar", "Ishrin", "Ashara", "Thalatha"], "answer": "Ahada ‘ashar" },
+        { "english": "Twelve", "options": ["Ithnata ‘ashar", "Ahada ‘ashar", "Ishrin", "Arba’a"], "answer": "Ithnata ‘ashar" },
+        { "english": "Thirteen", "options": ["Thalathata ‘ashar", "Ithnata ‘ashar", "Ahada ‘ashar", "Khamsa"], "answer": "Thalathata ‘ashar" },
+        { "english": "Fourteen", "options": ["Arba’ata ‘ashar", "Thalathata ‘ashar", "Ithnata ‘ashar", "Sitta"], "answer": "Arba’ata ‘ashar" },
+        { "english": "Fifteen", "options": ["Khamasata ‘ashar", "Arba’ata ‘ashar", "Thalathata ‘ashar", "Sab’a"], "answer": "Khamasata ‘ashar" },
+        { "english": "Sixteen", "options": ["Sittata ‘ashar", "Khamasata ‘ashar", "Arba’ata ‘ashar", "Thamaniya"], "answer": "Sittata ‘ashar" },
+        { "english": "Seventeen", "options": ["Sab’ata ‘ashar", "Sittata ‘ashar", "Khamasata ‘ashar", "Tis’a"], "answer": "Sab’ata ‘ashar" },
+        { "english": "Eighteen", "options": ["Thamanata ‘ashar", "Sab’ata ‘ashar", "Sittata ‘ashar", "Ashara"], "answer": "Thamanata ‘ashar" },
+        { "english": "Nineteen", "options": ["Tis’ata ‘ashar", "Thamanata ‘ashar", "Sab’ata ‘ashar", "Ishrin"], "answer": "Tis’ata ‘ashar" },
+        { "english": "Twenty", "options": ["Ishrin", "Tis’ata ‘ashar", "Thamanata ‘ashar", "Ahada ‘ashar"], "answer": "Ishrin" }
+      ]
+    },
+    "no": {
+      "title": "Quiz: Tall",
+      "description": "Test din kunnskap om tall på bagdad-arabisk:",
+      "questions": [
+        { "english": "En", "options": ["Wahid", "Ithnayn", "Thalatha", "Arba’a"], "answer": "Wahid" },
+        { "english": "To", "options": ["Ithnayn", "Thalatha", "Arba’a", "Khamsa"], "answer": "Ithnayn" },
+        { "english": "Tre", "options": ["Thalatha", "Arba’a", "Khamsa", "Sitta"], "answer": "Thalatha" },
+        { "english": "Fire", "options": ["Arba’a", "Khamsa", "Sitta", "Sab’a"], "answer": "Arba’a" },
+        { "english": "Fem", "options": ["Khamsa", "Sitta", "Sab’a", "Thamaniya"], "answer": "Khamsa" },
+        { "english": "Seks", "options": ["Sitta", "Sab’a", "Thamaniya", "Tis’a"], "answer": "Sitta" },
+        { "english": "Sju", "options": ["Sab’a", "Thamaniya", "Tis’a", "Ashara"], "answer": "Sab’a" },
+        { "english": "Åtte", "options": ["Thamaniya", "Tis’a", "Ashara", "Ahada ‘ashar"], "answer": "Thamaniya" },
+        { "english": "Ni", "options": ["Tis’a", "Ashara", "Ahada ‘ashar", "Ishrin"], "answer": "Tis’a" },
+        { "english": "Ti", "options": ["Ashara", "Ahada ‘ashar", "Ishrin", "Thalatha"], "answer": "Ashara" },
+        { "english": "Elve", "options": ["Ahada ‘ashar", "Ishrin", "Ashara", "Thalatha"], "answer": "Ahada ‘ashar" },
+        { "english": "Tolv", "options": ["Ithnata ‘ashar", "Ahada ‘ashar", "Ishrin", "Arba’a"], "answer": "Ithnata ‘ashar" },
+        { "english": "Tretten", "options": ["Thalathata ‘ashar", "Ithnata ‘ashar", "Ahada ‘ashar", "Khamsa"], "answer": "Thalathata ‘ashar" },
+        { "english": "Fjorten", "options": ["Arba’ata ‘ashar", "Thalathata ‘ashar", "Ithnata ‘ashar", "Sitta"], "answer": "Arba’ata ‘ashar" },
+        { "english": "Femten", "options": ["Khamasata ‘ashar", "Arba’ata ‘ashar", "Thalathata ‘ashar", "Sab’a"], "answer": "Khamasata ‘ashar" },
+        { "english": "Seksten", "options": ["Sittata ‘ashar", "Khamasata ‘ashar", "Arba’ata ‘ashar", "Thamaniya"], "answer": "Sittata ‘ashar" },
+        { "english": "Sytten", "options": ["Sab’ata ‘ashar", "Sittata ‘ashar", "Khamasata ‘ashar", "Tis’a"], "answer": "Sab’ata ‘ashar" },
+        { "english": "Atten", "options": ["Thamanata ‘ashar", "Sab’ata ‘ashar", "Sittata ‘ashar", "Ashara"], "answer": "Thamanata ‘ashar" },
+        { "english": "Nitten", "options": ["Tis’ata ‘ashar", "Thamanata ‘ashar", "Sab’ata ‘ashar", "Ishrin"], "answer": "Tis’ata ‘ashar" },
+        { "english": "Tjue", "options": ["Ishrin", "Tis’ata ‘ashar", "Thamanata ‘ashar", "Ahada ‘ashar"], "answer": "Ishrin" }
+      ]
+    }
+  }

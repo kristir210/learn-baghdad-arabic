@@ -1,0 +1,62 @@
+{
+  "en": {
+    "title": "Practice: Greetings",
+    "description": "Practice common Baghdad Arabic greetings with romanized pronunciation:",
+    "phrases": [
+      { "english": "Hello", "arabic": "Marhaba (pronounced: mar-ha-bah)" },
+      { "english": "Good morning", "arabic": "Sabah al-noor (pronounced: sa-bah al-noor)" },
+      { "english": "Good evening", "arabic": "Masa al-jamal (pronounced: ma-sa al-ja-mal)" },
+      { "english": "How are you?", "arabic": "Keefak? (pronounced: kee-fak)" },
+      { "english": "Welcome", "arabic": "Ahlan bik (pronounced: ah-lan beek)" },
+      { "english": "Good night", "arabic": "Tisbah bikhair (pronounced: tis-bah bee-khair)" },
+      { "english": "See you later", "arabic": "Nshufak baadan (pronounced: n-shoo-fak bah-ad-an)" },
+      { "english": "Goodbye", "arabic": "Fi aman Allah (pronounced: fee ah-man allah)" },
+      { "english": "What’s up?", "arabic": "Shlon halak? (pronounced: sh-lon ha-lak)" },
+      { "english": "Pleased to meet you", "arabic": "Mutasharraf (pronounced: moo-ta-shar-ruf)" },
+      { "english": "How’s your day?", "arabic": "Kayf yomak? (pronounced: kai-yif yo-mak)" },
+      { "english": "I’m doing well", "arabic": "Ana bikhair, shukran (pronounced: ah-nah bee-khair, shoo-kran)" },
+      { "english": "Take care of yourself", "arabic": "Khod care nafsak (pronounced: khod care naf-sak)" },
+      { "english": "Have a safe journey", "arabic": "Safar sa’eed (pronounced: sa-far sah-eed)" },
+      { "english": "May God bless you", "arabic": "Allah ybarik fik (pronounced: allah yah-bah-reek feek)" },
+      { "english": "Peace be upon you", "arabic": "Assalamu alaykum (pronounced: as-sa-la-moo al-ay-koom)" },
+      { "english": "And peace upon you", "arabic": "Wa alaykum assalam (pronounced: wa al-ay-koom as-sa-lam)" },
+      { "english": "Long time no see", "arabic": "Min zamman ma shufnak (pronounced: meen zam-man ma shoo-fnak)" },
+      { "english": "How have you been?", "arabic": "Kayf kunak? (pronounced: kai-yif koo-nak)" },
+      { "english": "Wishing you all the best", "arabic": "Kol el tawaafuk (pronounced: kol el ta-wa-foo-k)" }
+    ],
+    "ui": {
+      "backToHome": "Back to Home",
+      "loading": "Loading..."
+    }
+  },
+  "no": {
+    "title": "Øving: Hilsener",
+    "description": "Øv på vanlige hilsener på bagdad-arabisk med romanisert uttale:",
+    "phrases": [
+      { "english": "Hei", "arabic": "Marhaba (uttalt: mar-ha-bah)" },
+      { "english": "God morgen", "arabic": "Sabah al-noor (uttalt: sa-bah al-noor)" },
+      { "english": "God kveld", "arabic": "Masa al-jamal (uttalt: ma-sa al-ja-mal)" },
+      { "english": "Hvordan går det?", "arabic": "Keefak? (uttalt: kee-fak)" },
+      { "english": "Velkommen", "arabic": "Ahlan bik (uttalt: ah-lan beek)" },
+      { "english": "God natt", "arabic": "Tisbah bikhair (uttalt: tis-bah bee-khair)" },
+      { "english": "Vi sees senere", "arabic": "Nshufak baadan (uttalt: n-shoo-fak bah-ad-an)" },
+      { "english": "Farvel", "arabic": "Fi aman Allah (uttalt: fee ah-man allah)" },
+      { "english": "Hva skjer?", "arabic": "Shlon halak? (uttalt: sh-lon ha-lak)" },
+      { "english": "Fint å møte deg", "arabic": "Mutasharraf (uttalt: moo-ta-shar-ruf)" },
+      { "english": "Hvordan er dagen din?", "arabic": "Kayf yomak? (uttalt: kai-yif yo-mak)" },
+      { "english": "Jeg har det bra", "arabic": "Ana bikhair, shukran (uttalt: ah-nah bee-khair, shoo-kran)" },
+      { "english": "Pass på deg selv", "arabic": "Khod care nafsak (uttalt: khod care naf-sak)" },
+      { "english": "Ha en trygg reise", "arabic": "Safar sa’eed (uttalt: sa-far sah-eed)" },
+      { "english": "Må Gud velsigne deg", "arabic": "Allah ybarik fik (uttalt: allah yah-bah-reek feek)" },
+      { "english": "Fred være med deg", "arabic": "Assalamu alaykum (uttalt: as-sa-la-moo al-ay-koom)" },
+      { "english": "Og fred være med deg", "arabic": "Wa alaykum assalam (uttalt: wa al-ay-koom as-sa-lam)" },
+      { "english": "Lenge siden sist", "arabic": "Min zamman ma shufnak (uttalt: meen zam-man ma shoo-fnak)" },
+      { "english": "Hvordan har du det?", "arabic": "Kayf kunak? (uttalt: kai-yif koo-nak)" },
+      { "english": "Ønsker deg alt mulig godt", "arabic": "Kol el tawaafuk (uttalt: kol el ta-wa-foo-k)" }
+    ],
+    "ui": {
+      "backToHome": "Tilbake til hjem",
+      "loading": "Laster..."
+    }
+  }
+}

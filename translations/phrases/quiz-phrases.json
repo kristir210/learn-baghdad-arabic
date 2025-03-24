@@ -1,0 +1,52 @@
+{
+    "en": {
+      "title": "Quiz: Common Phrases",
+      "description": "Test your knowledge of common Baghdad Arabic phrases:",
+      "questions": [
+        { "english": "Thank you", "options": ["Shukran", "Minfadlak", "Afwan", "Asif"], "answer": "Shukran" },
+        { "english": "Please", "options": ["Minfadlak", "Shukran", "Afwan", "Asif"], "answer": "Minfadlak" },
+        { "english": "Excuse me", "options": ["Afwan", "Asif", "Aiwa", "La"], "answer": "Afwan" },
+        { "english": "Sorry", "options": ["Asif", "Afwan", "Shukran", "Minfadlak"], "answer": "Asif" },
+        { "english": "Yes", "options": ["Aiwa", "La", "Shukran", "Minfadlak"], "answer": "Aiwa" },
+        { "english": "No", "options": ["La", "Aiwa", "Afwan", "Asif"], "answer": "La" },
+        { "english": "How much is this?", "options": ["Besh hal?", "Wayn il-hammam?", "Shino hada?", "Ana biddi musa’ada"], "answer": "Besh hal?" },
+        { "english": "I don’t understand", "options": ["Ma fahimt", "Tislam tkrar?", "Ana ju’aan", "Ana athshan"], "answer": "Ma fahimt" },
+        { "english": "Can you repeat that?", "options": ["Tislam tkrar?", "Ma fahimt", "Ana ju’aan", "Ana athshan"], "answer": "Tislam tkrar?" },
+        { "english": "I’m hungry", "options": ["Ana ju’aan", "Ana athshan", "Wayn il-hammam?", "Shino hada?"], "answer": "Ana ju’aan" },
+        { "english": "I’m thirsty", "options": ["Ana athshan", "Ana ju’aan", "Wayn il-hammam?", "Shino hada?"], "answer": "Ana athshan" },
+        { "english": "Where is the bathroom?", "options": ["Wayn il-hammam?", "Shino hada?", "Ana biddi musa’ada", "Tamam"], "answer": "Wayn il-hammam?" },
+        { "english": "What is this?", "options": ["Shino hada?", "Wayn il-hammam?", "Ana biddi musa’ada", "Tamam"], "answer": "Shino hada?" },
+        { "english": "I need help", "options": ["Ana biddi musa’ada", "Tamam", "Kteer mnih", "Ma a’rif"], "answer": "Ana biddi musa’ada" },
+        { "english": "It’s okay", "options": ["Tamam", "Kteer mnih", "Ma a’rif", "Yallah nroo7"], "answer": "Tamam" },
+        { "english": "Very good", "options": ["Kteer mnih", "Tamam", "Ma a’rif", "Yallah nroo7"], "answer": "Kteer mnih" },
+        { "english": "I don’t know", "options": ["Ma a’rif", "Kteer mnih", "Tamam", "Yallah nroo7"], "answer": "Ma a’rif" },
+        { "english": "Let’s go", "options": ["Yallah nroo7", "Yallah nshufak baad", "Tamam", "Kteer mnih"], "answer": "Yallah nroo7" },
+        { "english": "See you later", "options": ["Yallah nshufak baad", "Yallah nroo7", "Tamam", "Kteer mnih"], "answer": "Yallah nshufak baad" }
+      ]
+    },
+    "no": {
+      "title": "Quiz: Vanlige uttrykk",
+      "description": "Test din kunnskap om vanlige uttrykk på bagdad-arabisk:",
+      "questions": [
+        { "english": "Takk", "options": ["Shukran", "Minfadlak", "Afwan", "Asif"], "answer": "Shukran" },
+        { "english": "Vennligst", "options": ["Minfadlak", "Shukran", "Afwan", "Asif"], "answer": "Minfadlak" },
+        { "english": "Unnskyld meg", "options": ["Afwan", "Asif", "Aiwa", "La"], "answer": "Afwan" },
+        { "english": "Beklager", "options": ["Asif", "Afwan", "Shukran", "Minfadlak"], "answer": "Asif" },
+        { "english": "Ja", "options": ["Aiwa", "La", "Shukran", "Minfadlak"], "answer": "Aiwa" },
+        { "english": "Nei", "options": ["La", "Aiwa", "Afwan", "Asif"], "answer": "La" },
+        { "english": "Hvor mye koster dette?", "options": ["Besh hal?", "Wayn il-hammam?", "Shino hada?", "Ana biddi musa’ada"], "answer": "Besh hal?" },
+        { "english": "Jeg forstår ikke", "options": ["Ma fahimt", "Tislam tkrar?", "Ana ju’aan", "Ana athshan"], "answer": "Ma fahimt" },
+        { "english": "Kan du gjenta det?", "options": ["Tislam tkrar?", "Ma fahimt", "Ana ju’aan", "Ana athshan"], "answer": "Tislam tkrar?" },
+        { "english": "Jeg er sulten", "options": ["Ana ju’aan", "Ana athshan", "Wayn il-hammam?", "Shino hada?"], "answer": "Ana ju’aan" },
+        { "english": "Jeg er tørst", "options": ["Ana athshan", "Ana ju’aan", "Wayn il-hammam?", "Shino hada?"], "answer": "Ana athshan" },
+        { "english": "Hvor er toalettet?", "options": ["Wayn il-hammam?", "Shino hada?", "Ana biddi musa’ada", "Tamam"], "answer": "Wayn il-hammam?" },
+        { "english": "Hva er dette?", "options": ["Shino hada?", "Wayn il-hammam?", "Ana biddi musa’ada", "Tamam"], "answer": "Shino hada?" },
+        { "english": "Jeg trenger hjelp", "options": ["Ana biddi musa’ada", "Tamam", "Kteer mnih", "Ma a’rif"], "answer": "Ana biddi musa’ada" },
+        { "english": "Det er greit", "options": ["Tamam", "Kteer mnih", "Ma a’rif", "Yallah nroo7"], "answer": "Tamam" },
+        { "english": "Veldig bra", "options": ["Kteer mnih", "Tamam", "Ma a’rif", "Yallah nroo7"], "answer": "Kteer mnih" },
+        { "english": "Jeg vet ikke", "options": ["Ma a’rif", "Kteer mnih", "Tamam", "Yallah nroo7"], "answer": "Ma a’rif" },
+        { "english": "La oss gå", "options": ["Yallah nroo7", "Yallah nshufak baad", "Tamam", "Kteer mnih"], "answer": "Yallah nroo7" },
+        { "english": "Vi sees senere", "options": ["Yallah nshufak baad", "Yallah nroo7", "Tamam", "Kteer mnih"], "answer": "Yallah nshufak baad" }
+      ]
+    }
+  }

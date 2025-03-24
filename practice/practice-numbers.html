@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice: Numbers</title>
+  <title id="pageTitle">Loading...</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -50,32 +50,41 @@
 </head>
 <body>
   <div class="container">
-    <h1>Practice: Numbers</h1>
-    <p>Practice Baghdad Arabic numbers with romanized pronunciation:</p>
-    <ul>
-      <li><strong>One:</strong> wahid (pronounced: WAH-hid)</li>
-      <li><strong>Two:</strong> ithnayn (pronounced: ith-NAYN)</li>
-      <li><strong>Three:</strong> thalatha (pronounced: tha-LA-tha)</li>
-      <li><strong>Four:</strong> arbaa (pronounced: AR-baa)</li>
-      <li><strong>Five:</strong> khamsa (pronounced: KHAM-sa)</li>
-      <li><strong>Six:</strong> sitta (pronounced: SIT-ta)</li>
-      <li><strong>Seven:</strong> sabaa (pronounced: sa-BAA)</li>
-      <li><strong>Eight:</strong> thamaaniya (pronounced: tha-MAA-nee-ya)</li>
-      <li><strong>Nine:</strong> tisaa (pronounced: tee-SAA)</li>
-      <li><strong>Ten:</strong> ashara (pronounced: ah-SHA-ra)</li>
-      <li><strong>Eleven:</strong> ahadaashar (pronounced: a-HA-dah-shar)</li>
-      <li><strong>Twelve:</strong> ithnaashar (pronounced: ith-NAH-shar)</li>
-      <li><strong>Thirteen:</strong> thalathataashar (pronounced: tha-la-tha-TAH-shar)</li>
-      <li><strong>Fourteen:</strong> arbaataashar (pronounced: ar-baa-TAH-shar)</li>
-      <li><strong>Fifteen:</strong> khamasataashar (pronounced: kha-ma-sa-TAH-shar)</li>
-      <li><strong>Sixteen:</strong> sittataashar (pronounced: sit-ta-TAH-shar)</li>
-      <li><strong>Seventeen:</strong> sabaataashar (pronounced: sa-baa-TAH-shar)</li>
-      <li><strong>Eighteen:</strong> thamaaniyataashar (pronounced: tha-maa-nee-YAH-shar)</li>
-      <li><strong>Nineteen:</strong> tisaataashar (pronounced: tee-saa-TAH-shar)</li>
-      <li><strong>Twenty:</strong> ishrun (pronounced: ISH-run)</li>
-    </ul>
+    <!-- Dynamic Content -->
+    <h1 id="pageHeading">Loading...</h1>
+    <p id="pageDescription">Loading...</p>
+    <ul id="phraseList"></ul>
 
+    <!-- Back to Home Link -->
     <p><a href="../index.html">Back to Home</a></p>
   </div>
+
+  <script>
+    // Step 1: Determine the user's language (default to 'en')
+    const language = localStorage.getItem('language') || 'en';
+
+    // Step 2: Fetch the translation file
+    fetch('../translations/numbers/practice-numbers.json')
+      .then(response => response.json()) // Parse the JSON file
+      .then(data => {
+        const translations = data[language]; // Get translations for the selected language
+
+        // Step 3: Populate the page with translations
+        document.title = translations.title; // Update the page title
+        document.getElementById('pageHeading').textContent = translations.title; // Update the heading
+        document.getElementById('pageDescription').textContent = translations.description; // Update the description
+
+        // Step 4: Populate the list of phrases
+        const phraseList = document.getElementById('phraseList');
+        phraseList.innerHTML = ''; // Clear any existing content
+
+        translations.phrases.forEach(phrase => {
+          const li = document.createElement('li'); // Create a new list item
+          li.innerHTML = `<strong>${phrase.english}:</strong> ${phrase.arabic}`; // Add the phrase
+          phraseList.appendChild(li); // Append the list item to the list
+        });
+      })
+      .catch(error => console.error('Error loading translations:', error)); // Handle errors
+  </script>
 </body>
 </html>

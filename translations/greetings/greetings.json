@@ -1,0 +1,62 @@
+{
+  "en": {
+    "title": "Lesson: Greetings",
+    "description": "Learn common Baghdad Arabic greetings:",
+    "phrases": [
+      { "english": "Hello", "arabic": "Marhaba" },
+      { "english": "Good morning", "arabic": "Sabah al-noor" },
+      { "english": "Good evening", "arabic": "Masa al-jamal" },
+      { "english": "How are you?", "arabic": "Keefak?" },
+      { "english": "Welcome", "arabic": "Ahlan bik" },
+      { "english": "Good night", "arabic": "Tisbah bikhair" },
+      { "english": "See you later", "arabic": "Nshufak baadan" },
+      { "english": "Goodbye", "arabic": "Fi aman Allah" },
+      { "english": "What’s up?", "arabic": "Shlon halak?" },
+      { "english": "Pleased to meet you", "arabic": "Mutasharraf" },
+      { "english": "How’s your day?", "arabic": "Kayf yomak?" },
+      { "english": "I’m doing well", "arabic": "Ana bikhair, shukran" },
+      { "english": "Take care of yourself", "arabic": "Khod care nafsak" },
+      { "english": "Have a safe journey", "arabic": "Safar sa’eed" },
+      { "english": "May God bless you", "arabic": "Allah ybarik fik" },
+      { "english": "Peace be upon you", "arabic": "Assalamu alaykum" },
+      { "english": "And peace upon you", "arabic": "Wa alaykum assalam" },
+      { "english": "Long time no see", "arabic": "Min zamman ma shufnak" },
+      { "english": "How have you been?", "arabic": "Kayf kunak?" },
+      { "english": "Wishing you all the best", "arabic": "Kol el tawaafuk" }
+    ],
+    "ui": {
+      "backToHome": "Back to Home",
+      "loading": "Loading..."
+    }
+  },
+  "no": {
+    "title": "Leksjon: Hilsener",
+    "description": "Lær vanlige hilsener på bagdad-arabisk:",
+    "phrases": [
+      { "english": "Hei", "arabic": "Marhaba" },
+      { "english": "God morgen", "arabic": "Sabah al-noor" },
+      { "english": "God kveld", "arabic": "Masa al-jamal" },
+      { "english": "Hvordan går det?", "arabic": "Keefak?" },
+      { "english": "Velkommen", "arabic": "Ahlan bik" },
+      { "english": "God natt", "arabic": "Tisbah bikhair" },
+      { "english": "Vi sees senere", "arabic": "Nshufak baadan" },
+      { "english": "Farvel", "arabic": "Fi aman Allah" },
+      { "english": "Hva skjer?", "arabic": "Shlon halak?" },
+      { "english": "Fint å møte deg", "arabic": "Mutasharraf" },
+      { "english": "Hvordan er dagen din?", "arabic": "Kayf yomak?" },
+      { "english": "Jeg har det bra", "arabic": "Ana bikhair, shukran" },
+      { "english": "Pass på deg selv", "arabic": "Khod care nafsak" },
+      { "english": "Ha en trygg reise", "arabic": "Safar sa’eed" },
+      { "english": "Må Gud velsigne deg", "arabic": "Allah ybarik fik" },
+      { "english": "Fred være med deg", "arabic": "Assalamu alaykum" },
+      { "english": "Og fred være med deg", "arabic": "Wa alaykum assalam" },
+      { "english": "Lenge siden sist", "arabic": "Min zamman ma shufnak" },
+      { "english": "Hvordan har du det?", "arabic": "Kayf kunak?" },
+      { "english": "Ønsker deg alt mulig godt", "arabic": "Kol el tawaafuk" }
+    ],
+    "ui": {
+      "backToHome": "Tilbake til hjem",
+      "loading": "Laster..."
+    }
+  }
+}

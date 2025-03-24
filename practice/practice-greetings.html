@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice: Greetings</title>
+  <title id="pageTitle">Loading...</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -50,32 +50,41 @@
 </head>
 <body>
   <div class="container">
-    <h1>Practice: Greetings</h1>
-    <p>Practice common Baghdad Arabic greetings with romanized pronunciation:</p>
-    <ul>
-      <li><strong>Hello:</strong> Marhaba (pronounced: mar-HAH-bah)</li>
-      <li><strong>Good morning:</strong> Sabah al-noor (pronounced: sah-BAH al-NOOR)</li>
-      <li><strong>Good evening:</strong> Masa al-jamal (pronounced: mah-SAH al-JAH-mal)</li>
-      <li><strong>How are you?:</strong> Keefak? (pronounced: kee-FAK)</li>
-      <li><strong>Welcome:</strong> Ahlan bik (pronounced: AHL-han beek)</li>
-      <li><strong>Good night:</strong> Tisbah bikhair (pronounced: tis-BAH bee-KHAIR)</li>
-      <li><strong>See you later:</strong> Nshufak baadan (pronounced: n-shoo-FAK bah-AHD)</li>
-      <li><strong>Goodbye:</strong> Fi aman Allah (pronounced: fee ah-MAN all-LAH)</li>
-      <li><strong>What’s up?:</strong> Shlon halak? (pronounced: sh-lon ha-LAK)</li>
-      <li><strong>Pleased to meet you:</strong> Mutasharraf (pronounced: moo-ta-shar-RAF)</li>
-      <li><strong>How’s your day?:</strong> Kayf yomak? (pronounced: kah-yif yo-MAK)</li>
-      <li><strong>I’m doing well:</strong> Ana bikhair, shukran (pronounced: AH-nah bee-KHAIR, SHOOK-ran)</li>
-      <li><strong>Take care of yourself:</strong> Khod care nafsak (pronounced: KHOD care naf-SAK)</li>
-      <li><strong>Have a safe journey:</strong> Safar sa’eed (pronounced: sah-FAR sah-EED)</li>
-      <li><strong>May God bless you:</strong> Allah ybarik fik (pronounced: all-LAH yah-BAR-rik feek)</li>
-      <li><strong>Peace be upon you:</strong> Assalamu alaykum (pronounced: ah-SAL-amoo ah-LAY-koom)</li>
-      <li><strong>And upon you peace:</strong> Wa alaykum assalam (pronounced: wah ah-LAY-koom ah-SAL-am)</li>
-      <li><strong>Long time no see:</strong> Min zamman ma shufnak (pronounced: meen ZAM-man mah shoo-FAK)</li>
-      <li><strong>How have you been?:</strong> Kayf kunak? (pronounced: kah-yif KOO-nak)</li>
-      <li><strong>Wishing you all the best:</strong> Kol el tawaafuk (pronounced: kohl el tah-WAH-fook)</li>
-    </ul>
+    <!-- Dynamic Content -->
+    <h1 id="pageHeading">Loading...</h1>
+    <p id="pageDescription">Loading...</p>
+    <ul id="phraseList"></ul>
 
+    <!-- Back to Home Link -->
     <p><a href="../index.html">Back to Home</a></p>
   </div>
+
+  <script>
+    // Step 1: Determine the user's language (default to 'en')
+    const language = localStorage.getItem('language') || 'en';
+
+    // Step 2: Fetch the translation file
+    fetch('../translations/greetings/practice-greetings.json')
+      .then(response => response.json()) // Parse the JSON file
+      .then(data => {
+        const translations = data[language]; // Get translations for the selected language
+
+        // Step 3: Populate the page with translations
+        document.title = translations.title; // Update the page title
+        document.getElementById('pageHeading').textContent = translations.title; // Update the heading
+        document.getElementById('pageDescription').textContent = translations.description; // Update the description
+
+        // Step 4: Populate the list of phrases
+        const phraseList = document.getElementById('phraseList');
+        phraseList.innerHTML = ''; // Clear any existing content
+
+        translations.phrases.forEach(phrase => {
+          const li = document.createElement('li'); // Create a new list item
+          li.innerHTML = `<strong>${phrase.english}:</strong> ${phrase.arabic}`; // Add the phrase
+          phraseList.appendChild(li); // Append the list item to the list
+        });
+      })
+      .catch(error => console.error('Error loading translations:', error)); // Handle errors
+  </script>
 </body>
 </html>

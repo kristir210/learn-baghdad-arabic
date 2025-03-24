@@ -1,0 +1,54 @@
+{
+    "en": {
+      "title": "Practice: Numbers",
+      "description": "Practice numbers in Baghdad Arabic with romanized pronunciation:",
+      "phrases": [
+        { "english": "One", "arabic": "Wahid (pronounced: wah-heed)" },
+        { "english": "Two", "arabic": "Ithnayn (pronounced: ith-nayn)" },
+        { "english": "Three", "arabic": "Thalatha (pronounced: tha-la-tha)" },
+        { "english": "Four", "arabic": "Arba’a (pronounced: ar-ba-ah)" },
+        { "english": "Five", "arabic": "Khamsa (pronounced: kham-sah)" },
+        { "english": "Six", "arabic": "Sitta (pronounced: sit-tah)" },
+        { "english": "Seven", "arabic": "Sab’a (pronounced: sab-ah)" },
+        { "english": "Eight", "arabic": "Thamaniya (pronounced: tha-ma-nee-yah)" },
+        { "english": "Nine", "arabic": "Tis’a (pronounced: tis-ah)" },
+        { "english": "Ten", "arabic": "Ashara (pronounced: ah-sha-rah)" },
+        { "english": "Eleven", "arabic": "Ahada ‘ashar (pronounced: ah-ha-dah ash-ar)" },
+        { "english": "Twelve", "arabic": "Ithnata ‘ashar (pronounced: ith-na-tah ash-ar)" },
+        { "english": "Thirteen", "arabic": "Thalathata ‘ashar (pronounced: tha-la-tha-tah ash-ar)" },
+        { "english": "Fourteen", "arabic": "Arba’ata ‘ashar (pronounced: ar-ba-a-tah ash-ar)" },
+        { "english": "Fifteen", "arabic": "Khamasata ‘ashar (pronounced: kha-ma-sa-tah ash-ar)" },
+        { "english": "Sixteen", "arabic": "Sittata ‘ashar (pronounced: sit-ta-tah ash-ar)" },
+        { "english": "Seventeen", "arabic": "Sab’ata ‘ashar (pronounced: sab-a-tah ash-ar)" },
+        { "english": "Eighteen", "arabic": "Thamanata ‘ashar (pronounced: tha-ma-na-tah ash-ar)" },
+        { "english": "Nineteen", "arabic": "Tis’ata ‘ashar (pronounced: tis-a-tah ash-ar)" },
+        { "english": "Twenty", "arabic": "Ishrin (pronounced: eesh-rin)" }
+      ]
+    },
+    "no": {
+      "title": "Øving: Tall",
+      "description": "Øv på tall på bagdad-arabisk med romanisert uttale:",
+      "phrases": [
+        { "english": "En", "arabic": "Wahid (uttalt: wah-heed)" },
+        { "english": "To", "arabic": "Ithnayn (uttalt: ith-nayn)" },
+        { "english": "Tre", "arabic": "Thalatha (uttalt: tha-la-tha)" },
+        { "english": "Fire", "arabic": "Arba’a (uttalt: ar-ba-ah)" },
+        { "english": "Fem", "arabic": "Khamsa (uttalt: kham-sah)" },
+        { "english": "Seks", "arabic": "Sitta (uttalt: sit-tah)" },
+        { "english": "Sju", "arabic": "Sab’a (uttalt: sab-ah)" },
+        { "english": "Åtte", "arabic": "Thamaniya (uttalt: tha-ma-nee-yah)" },
+        { "english": "Ni", "arabic": "Tis’a (uttalt: tis-ah)" },
+        { "english": "Ti", "arabic": "Ashara (uttalt: ah-sha-rah)" },
+        { "english": "Elve", "arabic": "Ahada ‘ashar (uttalt: ah-ha-dah ash-ar)" },
+        { "english": "Tolv", "arabic": "Ithnata ‘ashar (uttalt: ith-na-tah ash-ar)" },
+        { "english": "Tretten", "arabic": "Thalathata ‘ashar (uttalt: tha-la-tha-tah ash-ar)" },
+        { "english": "Fjorten", "arabic": "Arba’ata ‘ashar (uttalt: ar-ba-a-tah ash-ar)" },
+        { "english": "Femten", "arabic": "Khamasata ‘ashar (uttalt: kha-ma-sa-tah ash-ar)" },
+        { "english": "Seksten", "arabic": "Sittata ‘ashar (uttalt: sit-ta-tah ash-ar)" },
+        { "english": "Sytten", "arabic": "Sab’ata ‘ashar (uttalt: sab-a-tah ash-ar)" },
+        { "english": "Atten", "arabic": "Thamanata ‘ashar (uttalt: tha-ma-na-tah ash-ar)" },
+        { "english": "Nitten", "arabic": "Tis’ata ‘ashar (uttalt: tis-a-tah ash-ar)" },
+        { "english": "Tjue", "arabic": "Ishrin (uttalt: eesh-rin)" }
+      ]
+    }
+  }

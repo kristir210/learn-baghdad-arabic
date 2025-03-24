@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson: Numbers</title>
+  <title id="pageTitle">Loading...</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -50,32 +50,41 @@
 </head>
 <body>
   <div class="container">
-    <h1>Lesson: Numbers</h1>
-    <p>Learn Baghdad Arabic numbers:</p>
-    <ul>
-      <li><strong>One:</strong> wahid</li>
-      <li><strong>Two:</strong> ithnayn</li>
-      <li><strong>Three:</strong> thalatha</li>
-      <li><strong>Four:</strong> arbaa</li>
-      <li><strong>Five:</strong> khamsa</li>
-      <li><strong>Six:</strong> sitta</li>
-      <li><strong>Seven:</strong> sabaa</li>
-      <li><strong>Eight:</strong> thamaaniya</li>
-      <li><strong>Nine:</strong> tisaa</li>
-      <li><strong>Ten:</strong> ashara</li>
-      <li><strong>Eleven:</strong> ahadaashar</li>
-      <li><strong>Twelve:</strong> ithnaashar</li>
-      <li><strong>Thirteen:</strong> thalathataashar</li>
-      <li><strong>Fourteen:</strong> arbaataashar</li>
-      <li><strong>Fifteen:</strong> khamasataashar</li>
-      <li><strong>Sixteen:</strong> sittataashar</li>
-      <li><strong>Seventeen:</strong> sabaataashar</li>
-      <li><strong>Eighteen:</strong> thamaaniyataashar</li>
-      <li><strong>Nineteen:</strong> tisaataashar</li>
-      <li><strong>Twenty:</strong> ishrun</li>
-    </ul>
+    <!-- Dynamic Content -->
+    <h1 id="pageHeading">Loading...</h1>
+    <p id="pageDescription">Loading...</p>
+    <ul id="phraseList"></ul>
 
+    <!-- Back to Home Link -->
     <p><a href="../index.html">Back to Home</a></p>
   </div>
+
+  <script>
+    // Step 1: Determine the user's language (default to 'en')
+    const language = localStorage.getItem('language') || 'en';
+
+    // Step 2: Fetch the translation file
+    fetch('../translations/numbers/numbers.json')
+      .then(response => response.json()) // Parse the JSON file
+      .then(data => {
+        const translations = data[language]; // Get translations for the selected language
+
+        // Step 3: Populate the page with translations
+        document.title = translations.title; // Update the page title
+        document.getElementById('pageHeading').textContent = translations.title; // Update the heading
+        document.getElementById('pageDescription').textContent = translations.description; // Update the description
+
+        // Step 4: Populate the list of phrases
+        const phraseList = document.getElementById('phraseList');
+        phraseList.innerHTML = ''; // Clear any existing content
+
+        translations.phrases.forEach(phrase => {
+          const li = document.createElement('li'); // Create a new list item
+          li.innerHTML = `<strong>${phrase.english}:</strong> ${phrase.arabic}`; // Add the phrase
+          phraseList.appendChild(li); // Append the list item to the list
+        });
+      })
+      .catch(error => console.error('Error loading translations:', error)); // Handle errors
+  </script>
 </body>
 </html>

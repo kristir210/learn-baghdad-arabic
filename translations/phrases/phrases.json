@@ -1,0 +1,52 @@
+{
+    "en": {
+      "title": "Lesson: Common Phrases",
+      "description": "Learn common Baghdad Arabic phrases:",
+      "phrases": [
+        { "english": "Thank you", "arabic": "Shukran (pronounced: shoo-kran)" },
+        { "english": "Please", "arabic": "Minfadlak (pronounced: meen-fad-lak)" },
+        { "english": "Excuse me", "arabic": "Afwan (pronounced: af-wan)" },
+        { "english": "Sorry", "arabic": "Asif (pronounced: ah-seef)" },
+        { "english": "Yes", "arabic": "Aiwa (pronounced: ay-wah)" },
+        { "english": "No", "arabic": "La (pronounced: lah)" },
+        { "english": "How much is this?", "arabic": "Besh hal? (pronounced: besh-hal)" },
+        { "english": "I don’t understand", "arabic": "Ma fahimt (pronounced: mah fa-heemt)" },
+        { "english": "Can you repeat that?", "arabic": "Tislam tkrar? (pronounced: tee-slam te-krar)" },
+        { "english": "I’m hungry", "arabic": "Ana ju’aan (pronounced: ah-nah joo-an)" },
+        { "english": "I’m thirsty", "arabic": "Ana athshan (pronounced: ah-nah ath-shan)" },
+        { "english": "Where is the bathroom?", "arabic": "Wayn il-hammam? (pronounced: wayn il-ham-mam)" },
+        { "english": "What is this?", "arabic": "Shino hada? (pronounced: shee-no ha-dah)" },
+        { "english": "I need help", "arabic": "Ana biddi musa’ada (pronounced: ah-nah bee-dee moo-sa-ah-dah)" },
+        { "english": "It’s okay", "arabic": "Tamam (pronounced: tah-mam)" },
+        { "english": "Very good", "arabic": "Kteer mnih (pronounced: kteer mee-nih)" },
+        { "english": "I don’t know", "arabic": "Ma a’rif (pronounced: mah ah-rif)" },
+        { "english": "Let’s go", "arabic": "Yallah nroo7 (pronounced: yah-lah n-rooh)" },
+        { "english": "See you later", "arabic": "Yallah nshufak baad (pronounced: yah-lah n-shoo-fak bah-ad)" }
+      ]
+    },
+    "no": {
+      "title": "Leksjon: Vanlige uttrykk",
+      "description": "Lær vanlige uttrykk på bagdad-arabisk:",
+      "phrases": [
+        { "english": "Takk", "arabic": "Shukran (uttalt: shoo-kran)" },
+        { "english": "Vennligst", "arabic": "Minfadlak (uttalt: meen-fad-lak)" },
+        { "english": "Unnskyld meg", "arabic": "Afwan (uttalt: af-wan)" },
+        { "english": "Beklager", "arabic": "Asif (uttalt: ah-seef)" },
+        { "english": "Ja", "arabic": "Aiwa (uttalt: ay-wah)" },
+        { "english": "Nei", "arabic": "La (uttalt: lah)" },
+        { "english": "Hvor mye koster dette?", "arabic": "Besh hal? (uttalt: besh-hal)" },
+        { "english": "Jeg forstår ikke", "arabic": "Ma fahimt (uttalt: mah fa-heemt)" },
+        { "english": "Kan du gjenta det?", "arabic": "Tislam tkrar? (uttalt: tee-slam te-krar)" },
+        { "english": "Jeg er sulten", "arabic": "Ana ju’aan (uttalt: ah-nah joo-an)" },
+        { "english": "Jeg er tørst", "arabic": "Ana athshan (uttalt: ah-nah ath-shan)" },
+        { "english": "Hvor er toalettet?", "arabic": "Wayn il-hammam? (uttalt: wayn il-ham-mam)" },
+        { "english": "Hva er dette?", "arabic": "Shino hada? (uttalt: shee-no ha-dah)" },
+        { "english": "Jeg trenger hjelp", "arabic": "Ana biddi musa’ada (uttalt: ah-nah bee-dee moo-sa-ah-dah)" },
+        { "english": "Det er greit", "arabic": "Tamam (uttalt: tah-mam)" },
+        { "english": "Veldig bra", "arabic": "Kteer mnih (uttalt: kteer mee-nih)" },
+        { "english": "Jeg vet ikke", "arabic": "Ma a’rif (uttalt: mah ah-rif)" },
+        { "english": "La oss gå", "arabic": "Yallah nroo7 (uttalt: yah-lah n-rooh)" },
+        { "english": "Vi sees senere", "arabic": "Yallah nshufak baad (uttalt: yah-lah n-shoo-fak bah-ad)" }
+      ]
+    }
+  }

@@ -1,0 +1,42 @@
+{
+    "en": {
+      "pageTitle": "Welcome to Learn Baghdad Arabic",
+      "pageDescription": "This website is designed to help you learn basic Baghdad Arabic phrases, greetings, and numbers.",
+      "learnSectionTitle": "Learn new words and phrases",
+      "practiceSectionTitle": "Practice new words and phrases",
+      "quizSectionTitle": "Quiz",
+      "futureContentTitle": "For future content",
+      "futureContentDescription": "This section is reserved for future content.",
+      "sloganTop": "مرحباً بكم في تعلم اللهجة البغدادية!",
+      "sloganBottom": "Learning a new language opens doors to new worlds.",
+      "greetingsLink": "Lesson 1: Greetings",
+      "phrasesLink": "Lesson 2: Common Phrases",
+      "numbersLink": "Lesson 3: Numbers",
+      "practiceGreetingsLink": "Practice: Greetings",
+      "practicePhrasesLink": "Practice: Common Phrases",
+      "practiceNumbersLink": "Practice: Numbers",
+      "quizGreetingsLink": "Quiz: Greetings",
+      "quizPhrasesLink": "Quiz: Phrases",
+      "quizNumbersLink": "Quiz: Numbers"
+    },
+    "no": {
+      "pageTitle": "Velkommen til å lære bagdad-arabisk",
+      "pageDescription": "Dette nettstedet er designet for å hjelpe deg med å lære grunnleggende bagdad-arabiske fraser, hilsener og tall.",
+      "learnSectionTitle": "Lær nye ord og fraser",
+      "practiceSectionTitle": "Øv på nye ord og fraser",
+      "quizSectionTitle": "Quiz",
+      "futureContentTitle": "For fremtidig innhold",
+      "futureContentDescription": "Dette avsnittet er reservert for fremtidig innhold.",
+      "sloganTop": "مرحباً بكم في تعلم اللهجة البغدادية!",
+      "sloganBottom": "Å lære et nytt språk åpner dører til nye verdener.",
+      "greetingsLink": "Leksjon 1: Hilsener",
+      "phrasesLink": "Leksjon 2: Vanlige fraser",
+      "numbersLink": "Leksjon 3: Tall",
+      "practiceGreetingsLink": "Øving: Hilsener",
+      "practicePhrasesLink": "Øving: Vanlige fraser",
+      "practiceNumbersLink": "Øving: Tall",
+      "quizGreetingsLink": "Quiz: Hilsener",
+      "quizPhrasesLink": "Quiz: Frasene",
+      "quizNumbersLink": "Quiz: Tall"
+    }
+  }

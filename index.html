@@ -103,50 +103,83 @@
       text-align: center;
       margin-top: 20px;
     }
+
+    /* Language Switcher Styling */
+    #language-switcher {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    #language-switcher button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    #language-switcher button:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
+  <!-- Language Switcher -->
+  <div id="language-switcher">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('no')">Norsk</button>
+  </div>
+
   <div class="container">
     <!-- Top Slogan in Baghdad Arabic -->
-    <p class="slogan-top">مرحباً بكم في تعلم اللهجة البغدادية!</p>
+    <p class="slogan-top" id="sloganTop">مرحباً بكم في تعلم اللهجة البغدادية!</p>
 
-    <h1>Welcome to Learn Baghdad Arabic</h1>
-    <p>This website is designed to help you learn basic Baghdad Arabic phrases, greetings, and numbers.</p>
+    <h1 id="pageTitle">Welcome to Learn Baghdad Arabic</h1>
+    <p id="pageDescription">This website is designed to help you learn basic Baghdad Arabic phrases, greetings, and numbers.</p>
 
     <section class="section">
-      <h2>Learn new words and phrases</h2>
+      <h2 id="learnSectionTitle">Learn new words and phrases</h2>
       <ul>
-        <li><a href="lessons/greetings.html">Lesson 1: Greetings</a></li>
-        <li><a href="lessons/phrases.html">Lesson 2: Common Phrases</a></li>
-        <li><a href="lessons/numbers.html">Lesson 3: Numbers</a></li>
+        <li><a href="lessons/greetings.html" id="greetingsLink">Lesson 1: Greetings</a></li>
+        <li><a href="lessons/phrases.html" id="phrasesLink">Lesson 2: Common Phrases</a></li>
+        <li><a href="lessons/numbers.html" id="numbersLink">Lesson 3: Numbers</a></li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>Practice new words and phrases</h2>
+      <h2 id="practiceSectionTitle">Practice new words and phrases</h2>
       <ul>
-        <li><a href="practice/practice-greetings.html">Lesson 1: Greetings</a></li>
-        <li><a href="practice/practice-phrases.html">Lesson 2: Common Phrases</a></li>
-        <li><a href="practice/practice-numbers.html">Lesson 3: Numbers</a></li>
+        <li><a href="practice/practice-greetings.html" id="practiceGreetingsLink">Lesson 1: Greetings</a></li>
+        <li><a href="practice/practice-phrases.html" id="practicePhrasesLink">Lesson 2: Common Phrases</a></li>
+        <li><a href="practice/practice-numbers.html" id="practiceNumbersLink">Lesson 3: Numbers</a></li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>Quiz</h2>
+      <h2 id="quizSectionTitle">Quiz</h2>
       <ul>
-        <li><a href="quizzes/greetings-quiz.html">Quiz: Greetings</a></li>
-        <li><a href="quizzes/phrases-quiz.html">Quiz: Phrases</a></li>
-        <li><a href="quizzes/numbers-quiz.html">Quiz: Numbers</a></li>
+        <li><a href="quizzes/greetings-quiz.html" id="quizGreetingsLink">Quiz: Greetings</a></li>
+        <li><a href="quizzes/phrases-quiz.html" id="quizPhrasesLink">Quiz: Phrases</a></li>
+        <li><a href="quizzes/numbers-quiz.html" id="quizNumbersLink">Quiz: Numbers</a></li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>For future content</h2>
-      <p>This section is reserved for future content.</p>
+      <h2 id="futureContentTitle">For future content</h2>
+      <p id="futureContentDescription">This section is reserved for future content.</p>
     </section>
 
     <!-- Bottom Slogan in English -->
-    <p class="slogan-bottom">"Learning a new language opens doors to new worlds."</p>
+    <p class="slogan-bottom" id="sloganBottom">"Learning a new language opens doors to new worlds."</p>
   </div>
+
+  <!-- Include the JavaScript file -->
+  <script src="js/translations.js"></script>
 </body>
 </html>

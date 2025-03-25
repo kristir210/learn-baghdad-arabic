@@ -23,8 +23,8 @@ header.full-height {
 
 .content-container {
   max-width: 800px; /* Preserve original max-width */
-  width: 90%; /* Use percentage-based width */
-  padding: clamp(15px, 2vw, 20px); /* Dynamic padding */
+  width: 95%; /* Slightly wider for smaller screens */
+  padding: 20px; /* Fixed padding for consistency */
   background-color: #1e1e1e; /* Dark gray container */
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
@@ -36,6 +36,7 @@ h1 {
   font-size: clamp(24px, 4vw, 40px); /* Scales font size dynamically */
   margin: 0;
   color: #ffffff; /* White title */
+  word-break: break-word; /* Handle long titles */
 }
 
 .slogan {
@@ -44,6 +45,7 @@ h1 {
   color: #aaaaaa; /* Light gray for slogan */
   margin-top: 10px;
   direction: rtl; /* Right-to-left text direction for Arabic */
+  word-break: break-word; /* Handle long slogans */
 }
 
 a {
@@ -51,7 +53,7 @@ a {
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-block; /* Ensure links can have padding */
-  padding: clamp(8px, 1vw, 15px); /* Dynamic padding */
+  padding: 10px 15px; /* Fixed padding for consistency */
   border-radius: 5px; /* Rounded corners for a clean look */
   font-size: clamp(14px, 1.5vw, 16px); /* Scales font size dynamically */
 }
@@ -68,15 +70,15 @@ ul {
 }
 
 li {
-  margin-bottom: clamp(8px, 1vw, 15px); /* Dynamic spacing */
+  margin-bottom: 10px; /* Fixed spacing for consistency */
   word-break: break-word; /* Ensure long words wrap properly */
-  overflow-wrap: break-word; /* Prevent overflow */
+  overflow-wrap: anywhere; /* Prevent overflow */
   font-size: clamp(14px, 1.5vw, 16px); /* Scales font size dynamically */
 }
 
 footer {
   text-align: center;
-  padding: clamp(15px, 2vw, 20px); /* Dynamic padding */
+  padding: 20px; /* Fixed padding for consistency */
   background-color: #000000; /* Pure black */
   color: #aaaaaa; /* Light gray text */
   font-size: clamp(12px, 1.5vw, 14px); /* Scales font size dynamically */
@@ -86,20 +88,22 @@ footer {
 .section-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-  gap: clamp(20px, 2vw, 40px); /* Dynamic spacing */
-  padding: clamp(20px, 2vw, 40px); /* Dynamic padding */
+  gap: 20px; /* Fixed spacing for consistency */
+  padding: 20px; /* Fixed padding for consistency */
 }
 
 .section {
   background-color: #1e1e1e; /* Dark gray for contrast */
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  padding: clamp(15px, 2vw, 20px); /* Dynamic padding */
+  padding: 20px; /* Fixed padding for consistency */
   border: 2px solid #333; /* Add a border around each section */
   overflow-y: auto; /* Enable vertical scrolling for sections with long content */
+  word-break: break-word; /* Handle long phrases */
+  overflow-wrap: anywhere; /* Prevent overflow */
 }
 
 main {
   background-color: #000000; /* Pure black */
-  padding: clamp(20px, 2vw, 40px); /* Dynamic padding */
+  padding: 20px; /* Fixed padding for consistency */
 }

@@ -14,18 +14,21 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
+      align-items: flex-start; /* Align content to the top */
+      min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
     }
 
     .container {
       background-color: #333;
       color: white;
       max-width: 600px;
+      width: 95%; /* Adjust width for smaller screens */
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: left;
+      overflow-y: auto; /* Enable vertical scrolling for long content */
+      margin: 20px auto; /* Add spacing at the top */
     }
 
     h1, h2 {
@@ -83,16 +86,13 @@
           li.innerHTML = `<strong>${phrase.english}:</strong> ${phrase.arabic}`; // Add the phrase
           phraseList.appendChild(li); // Append the list item to the list
         });
+
+        // Step 5: Scroll to the top after content is fully loaded
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'auto' });
+        }, 100); // Small delay to ensure rendering is complete
       })
       .catch(error => console.error('Error loading translations:', error)); // Handle errors
-  </script>
-
-  <!-- Scroll to Top Script -->
-  <script>
-    // Ensure the page always loads at the top
-    window.onload = function () {
-      window.scrollTo(0, 0);
-    };
   </script>
 </body>
 </html>

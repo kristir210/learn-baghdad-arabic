@@ -22,22 +22,24 @@ header.full-height {
 }
 
 .content-container {
-  max-width: 800px;
-  padding: 20px;
+  max-width: 800px; /* Preserve original max-width */
+  width: 90%; /* Use percentage-based width */
+  padding: clamp(15px, 2vw, 20px); /* Dynamic padding */
   background-color: #1e1e1e; /* Dark gray container */
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
   overflow-y: auto; /* Enable vertical scrolling for long content */
+  margin: 0 auto; /* Center the container */
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: clamp(24px, 4vw, 40px); /* Scales font size dynamically */
   margin: 0;
   color: #ffffff; /* White title */
 }
 
 .slogan {
-  font-size: 1.2em;
+  font-size: clamp(14px, 2vw, 18px); /* Scales font size dynamically */
   font-style: italic;
   color: #aaaaaa; /* Light gray for slogan */
   margin-top: 10px;
@@ -49,8 +51,9 @@ a {
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-block; /* Ensure links can have padding */
-  padding: 10px 15px; /* Add padding to make links easier to tap */
+  padding: clamp(8px, 1vw, 15px); /* Dynamic padding */
   border-radius: 5px; /* Rounded corners for a clean look */
+  font-size: clamp(14px, 1.5vw, 16px); /* Scales font size dynamically */
 }
 
 a:hover {
@@ -64,62 +67,39 @@ ul {
   margin: 0;
 }
 
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #000000; /* Pure black */
-  color: #aaaaaa; /* Light gray text */
-  font-size: 0.9em;
-  margin-top: auto; /* Push the footer to the bottom */
+li {
+  margin-bottom: clamp(8px, 1vw, 15px); /* Dynamic spacing */
+  word-break: break-word; /* Ensure long words wrap properly */
+  overflow-wrap: break-word; /* Prevent overflow */
+  font-size: clamp(14px, 1.5vw, 16px); /* Scales font size dynamically */
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  h1 {
-      font-size: 2em; /* Slightly smaller title for mobile */
-  }
-
-  .slogan {
-      font-size: 1em; /* Slightly smaller slogan */
-  }
-
-  .content-container {
-      padding: 15px; /* Reduce padding for smaller screens */
-      font-size: 14px; /* Smaller font size for better readability */
-  }
-
-  a {
-      font-size: 1em; /* Adjust link size for readability */
-      padding: 10px 15px; /* Make links easier to tap */
-      border-radius: 5px;
-  }
+footer {
+  text-align: center;
+  padding: clamp(15px, 2vw, 20px); /* Dynamic padding */
+  background-color: #000000; /* Pure black */
+  color: #aaaaaa; /* Light gray text */
+  font-size: clamp(12px, 1.5vw, 14px); /* Scales font size dynamically */
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
 .section-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-  grid-gap: 40px; /* Space between grid items */
-  padding: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: clamp(20px, 2vw, 40px); /* Dynamic spacing */
+  padding: clamp(20px, 2vw, 40px); /* Dynamic padding */
 }
 
 .section {
   background-color: #1e1e1e; /* Dark gray for contrast */
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: clamp(15px, 2vw, 20px); /* Dynamic padding */
   border: 2px solid #333; /* Add a border around each section */
   overflow-y: auto; /* Enable vertical scrolling for sections with long content */
 }
 
-@media (max-width: 768px) {
-  .section {
-      width: 100%; /* Full width on smaller screens */
-      margin-bottom: 30px; /* Adjust space between sections on mobile */
-      padding: 15px; /* Reduce padding for smaller screens */
-  }
-}
-
 main {
   background-color: #000000; /* Pure black */
-  padding: 40px;
+  padding: clamp(20px, 2vw, 40px); /* Dynamic padding */
 }
